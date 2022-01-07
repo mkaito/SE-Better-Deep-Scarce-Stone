@@ -1,0 +1,11 @@
+"workshopitem"
+{
+	"appid"             "244850"
+	"publishedfileid"   ""
+	"contentfolder"     "/home/chris/dev/spaceengineers/Mods/UDSEBetterDeepScarceStone/Upload"
+	"previewfile"       "/home/chris/dev/spaceengineers/Mods/UDSEBetterDeepScarceStone/Upload/preview.jpg"
+	"visibility"        "3"
+	"title"             "UDSE Better Deep Scarce Stone"
+	"description"       "An ore distribution mod based on Better Stone, Scarce Resources, and Deep Ores"
+	"changenote"        "N/A"
+}

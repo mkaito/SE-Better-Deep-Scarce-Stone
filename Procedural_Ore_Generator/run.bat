@@ -1,0 +1,1 @@
+java -jar -Xms512m -Xmx4g Procedural_Ore_Generator.jar 

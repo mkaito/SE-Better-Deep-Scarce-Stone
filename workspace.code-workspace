@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../../../../mnt/c/Program Files (x86)/Steam/steamapps/common/SpaceEngineers/Content/Data"
+		},
+		{
+			"path": "../../../../../../mnt/c/Program Files (x86)/Steam/steamapps/workshop/content/244850/406244471",
+			"name": "Mod: Better Stone"
+		},
+		{
+			"path": "../../../../../../mnt/c/Program Files (x86)/Steam/steamapps/workshop/content/244850/831739660",
+			"name": "Mod: Scarce Resources"
+		},
+		{
+			"path": "../../../../../../mnt/c/Program Files (x86)/Steam/steamapps/workshop/content/244850/2281727435",
+			"name": "Mod: Better Deep Scarce Ores"
+		}
+	],
+	"settings": {}
+}

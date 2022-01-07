@@ -1,0 +1,549 @@
+{
+    "planetDataPath": "/home/chris/.steam/steam/steamapps/common/SpaceEngineers/Content/Data/PlanetDataFiles",
+    "planetGeneratorDefinitionsPathArray": [
+        "/home/chris/.steam/steam/steamapps/common/SpaceEngineers/Content/Data/PlanetGeneratorDefinitions.sbc",
+        "/home/chris/.steam/steam/steamapps/common/SpaceEngineers/Content/Data/Pertam.sbc",
+        "/home/chris/.steam/steam/steamapps/common/SpaceEngineers/Content/Data/Triton.sbc"
+    ],
+    "makeColouredMaps": true,
+    "surfaceHintMaps": true,
+    "shape": 1,
+    "density": 0.7,
+    "oreTemplates": [
+        {
+            "id": 1,
+            "type": "Iron_02",
+            "surfaceArea": 200,
+            "startDepth": 50,
+            "depth": 300
+        },
+        {
+            "id": 2,
+            "type": "Heazlewoodite_01",
+            "surfaceArea": 200,
+            "startDepth": 50,
+            "depth": 300
+        },
+        {
+            "id": 3,
+            "type": "Taenite_01",
+            "surfaceArea": 200,
+            "startDepth": 50,
+            "depth": 300
+        },
+        {
+            "id": 4,
+            "type": "Hapkeite_01",
+            "surfaceArea": 200,
+            "startDepth": 50,
+            "depth": 300
+        },
+        {
+            "id": 5,
+            "type": "Sinoite_01",
+            "surfaceArea": 200,
+            "startDepth": 50,
+            "depth": 300
+        },
+        {
+            "id": 6,
+            "type": "Quartz_01",
+            "surfaceArea": 200,
+            "startDepth": 50,
+            "depth": 300
+        },
+        {
+            "id": 100,
+            "type": "Akimotoite_01",
+            "surfaceArea": 200,
+            "startDepth": 300,
+            "depth": 300
+        },
+        {
+            "id": 101,
+            "type": "Wadsleyite_01",
+            "surfaceArea": 200,
+            "startDepth": 300,
+            "depth": 300
+        },
+        {
+            "id": 102,
+            "type": "Olivine_01",
+            "surfaceArea": 200,
+            "startDepth": 300,
+            "depth": 300
+        },
+        {
+            "id": 103,
+            "type": "Dolomite_01",
+            "surfaceArea": 200,
+            "startDepth": 300,
+            "depth": 300
+        },
+        {
+            "id": 104,
+            "type": "Cattierite_01",
+            "surfaceArea": 200,
+            "startDepth": 300,
+            "depth": 300,
+            "testColourHex": "7db9e8"
+        },
+        {
+            "id": 105,
+            "type": "Cohenite_01",
+            "surfaceArea": 200,
+            "startDepth": 300,
+            "depth": 300
+        },
+        {
+            "id": 106,
+            "type": "Kamacite_01",
+            "surfaceArea": 200,
+            "startDepth": 300,
+            "depth": 300,
+            "testColourHex": "7db9e8"
+        },
+        {
+            "id": 107,
+            "type": "Glaucodot_01",
+            "surfaceArea": 200,
+            "startDepth": 300,
+            "depth": 300,
+            "testColourHex": "7db9e8"
+        },
+        {
+            "id": 108,
+            "type": "Galena_01",
+            "surfaceArea": 200,
+            "startDepth": 300,
+            "depth": 300
+        },
+        {
+            "id": 109,
+            "type": "Chlorargyrite_01",
+            "surfaceArea": 200,
+            "startDepth": 300,
+            "depth": 300
+        },
+        {
+            "id": 200,
+            "type": "Carnotite_01",
+            "surfaceArea": 200,
+            "startDepth": 600,
+            "depth": 300
+        },
+        {
+            "id": 201,
+            "type": "Autunite_01",
+            "surfaceArea": 200,
+            "startDepth": 600,
+            "depth": 300
+        },
+        {
+            "id": 202,
+            "type": "Uraniaurite_01",
+            "surfaceArea": 200,
+            "startDepth": 600,
+            "depth": 300
+        },
+        {
+            "id": 203,
+            "type": "Electrum_01",
+            "surfaceArea": 200,
+            "startDepth": 600,
+            "depth": 300
+        },
+        {
+            "id": 204,
+            "type": "Porphyry_01",
+            "surfaceArea": 200,
+            "startDepth": 600,
+            "depth": 300
+        },
+        {
+            "id": 205,
+            "type": "Petzite_01",
+            "surfaceArea": 200,
+            "startDepth": 600,
+            "depth": 300
+        },
+        {
+            "id": 206,
+            "type": "Niggliite_01",
+            "surfaceArea": 200,
+            "startDepth": 600,
+            "depth": 300
+        },
+        {
+            "id": 207,
+            "type": "Cooperite_01",
+            "surfaceArea": 200,
+            "startDepth": 600,
+            "depth": 300
+        },
+        {
+            "id": 208,
+            "type": "Sperrylite_01",
+            "surfaceArea": 200,
+            "startDepth": 600,
+            "depth": 300
+        },
+        {
+            "id": 209,
+            "type": "Pyrite_01",
+            "surfaceArea": 200,
+            "startDepth": 600,
+            "depth": 300
+        }
+    ],
+    "planets": [
+        {
+            "name": "EarthLike",
+            "seed": 1,
+            "surfaceHintColour": 144,
+            "ores": [
+                {
+                    "id": 106,
+                    "p": 50
+                },
+                {
+                    "id": 107,
+                    "p": 50
+                },
+                {
+                    "id": 4,
+                    "p": 50
+                },
+                {
+                    "id": 5,
+                    "p": 5
+                },
+                {
+                    "id": 3,
+                    "p": 5
+                },
+                {
+                    "id": 1,
+                    "p": 5
+                },
+                {
+                    "id": 104,
+                    "p": 5
+                },
+                {
+                    "id": 105,
+                    "p": 5
+                },
+                {
+                    "id": 100,
+                    "p": 0.5
+                },
+                {
+                    "id": 101,
+                    "p": 0.5
+                }
+            ]
+        },
+        {
+            "name": "Moon",
+            "seed": 2,
+            "surfaceHintColour": 176,
+            "ores": [
+                {
+                    "id": 6,
+                    "p": 50
+                },
+                {
+                    "id": 2,
+                    "p": 50
+                },
+                {
+                    "id": 108,
+                    "p": 5
+                },
+                {
+                    "id": 209,
+                    "p": 5
+                },
+                {
+                    "id": 205,
+                    "p": 0.5
+                },
+                {
+                    "id": 203,
+                    "p": 0.5
+                }
+            ]
+        },
+        {
+            "name": "Mars",
+            "seed": 3,
+            "ores": [
+                {
+                    "id": 6,
+                    "p": 50
+                },
+                {
+                    "id": 4,
+                    "p": 50
+                },
+                {
+                    "id": 3,
+                    "p": 50
+                },
+                {
+                    "id": 1,
+                    "p": 5
+                },
+                {
+                    "id": 206,
+                    "p": 5
+                },
+                {
+                    "id": 207,
+                    "p": 5
+                },
+                {
+                    "id": 208,
+                    "p": 5
+                },
+                {
+                    "id": 100,
+                    "p": 0.5
+                },
+                {
+                    "id": 106,
+                    "p": 0.5
+                },
+                {
+                    "id": 107,
+                    "p": 0.5
+                }
+            ]
+        },
+        {
+            "name": "Europa",
+            "seed": 4,
+            "ores": [
+                {
+                    "id": 4,
+                    "p": 50
+                },
+                {
+                    "id": 3,
+                    "p": 50
+                },
+                {
+                    "id": 108,
+                    "p": 50
+                },
+                {
+                    "id": 109,
+                    "p": 5
+                },
+                {
+                    "id": 205,
+                    "p": 0.5
+                },
+                {
+                    "id": 203,
+                    "p": 0.5
+                }
+            ]
+        },
+        {
+            "name": "Alien",
+            "seed": 5,
+            "surfaceHintColour": 160,
+            "ores": [
+                {
+                    "id": 2,
+                    "p": 50
+                },
+                {
+                    "id": 4,
+                    "p": 50
+                },
+                {
+                    "id": 3,
+                    "p": 50
+                },
+                {
+                    "id": 1,
+                    "p": 5
+                },
+                {
+                    "id": 200,
+                    "p": 5
+                },
+                {
+                    "id": 201,
+                    "p": 5
+                },
+                {
+                    "id": 202,
+                    "p": 0.5
+                },
+                {
+                    "id": 101,
+                    "p": 0.5
+                },
+                {
+                    "id": 106,
+                    "p": 0.5
+                },
+                {
+                    "id": 107,
+                    "p": 0.5
+                }
+            ]
+        },
+        {
+            "name": "Titan",
+            "seed": 6,
+            "ores": [
+                {
+                    "id": 209,
+                    "p": 50
+                },
+                {
+                    "id": 6,
+                    "p": 50
+                },
+                {
+                    "id": 3,
+                    "p": 50
+                },
+                {
+                    "id": 4,
+                    "p": 5
+                },
+                {
+                    "id": 203,
+                    "p": 5
+                },
+                {
+                    "id": 204,
+                    "p": 5
+                },
+                {
+                    "id": 205,
+                    "p": 5
+                },
+                {
+                    "id": 207,
+                    "p": 0.5
+                }
+            ]
+        },
+        {
+            "name": "Triton",
+            "seed": 8,
+            "surfaceHintColour": 144,
+            "ores": [
+                {
+                    "id": 1,
+                    "p": 50
+                },
+                {
+                    "id": 101,
+                    "p": 50
+                },
+                {
+                    "id": 2,
+                    "p": 50
+                },
+                {
+                    "id": 103,
+                    "p": 5
+                },
+                {
+                    "id": 102,
+                    "p": 5
+                },
+                {
+                    "id": 100,
+                    "p": 5
+                },
+                {
+                    "id": 106,
+                    "p": 0.5
+                },
+                {
+                    "id": 107,
+                    "p": 0.5
+                }
+            ]
+        },
+        {
+            "name": "Pertam",
+            "seed": 6,
+            "ores": [
+                {
+                    "id": 106,
+                    "p": 50
+                },
+                {
+                    "id": 107,
+                    "p": 50
+                },
+                {
+                    "id": 4,
+                    "p": 50
+                },
+                {
+                    "id": 5,
+                    "p": 5
+                },
+                {
+                    "id": 3,
+                    "p": 5
+                },
+                {
+                    "id": 1,
+                    "p": 5
+                },
+                {
+                    "id": 104,
+                    "p": 5
+                },
+                {
+                    "id": 105,
+                    "p": 5
+                },
+                {
+                    "id": 100,
+                    "p": 0.5
+                },
+                {
+                    "id": 101,
+                    "p": 0.5
+                },
+                {
+                    "id": 6,
+                    "p": 50
+                },
+                {
+                    "id": 2,
+                    "p": 50
+                },
+                {
+                    "id": 108,
+                    "p": 5
+                },
+                {
+                    "id": 209,
+                    "p": 5
+                },
+                {
+                    "id": 205,
+                    "p": 0.5
+                },
+                {
+                    "id": 203,
+                    "p": 0.5
+                }
+            ]
+        }
+    ]
+}

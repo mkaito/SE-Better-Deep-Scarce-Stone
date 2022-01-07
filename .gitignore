@@ -1,0 +1,12 @@
+# POG Output
+/Procedural_Ore_Generator/PlanetDataFiles/
+/Procedural_Ore_Generator/PlanetGeneratorDefinitions.sbc
+/Procedural_Ore_Generator/Triton.sbc
+/Procedural_Ore_Generator/Pertam.sbc
+/Procedural_Ore_Generator/generator.log
+
+# Assembled output
+/Upload/
+
+# Vim
+*.swp
