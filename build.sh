@@ -4,8 +4,14 @@ set -euo pipefail
 IFS=$'\n\t'
 
 # WSL2 Paths
-GAMEDATA='$HOME/.steam/steam/steamapps/common/SpaceEngineers/Content/Data'
-GAMEMODS='$HOME/.steam/steam/steamapps/compatdata/244850/pfx/drive_c/users/steamuser/AppData/Roaming/SpaceEngineers/Mods'
+GAMEDATA='/mnt/c/Program Files (x86)/Steam/steamapps/common/SpaceEngineers/Content/Data'
+GAMEMODS='/mnt/c/Users/chris/AppData/Roaming/SpaceEngineers/Mods'
+
+# Generate ore maps
+# NOTE: Runs the windows version of java because reasons
+pushd Procedural_Ore_Generator
+  java.exe -Xms512M -Xmx8G -jar Procedural_Ore_Generator.jar
+popd
 
 # Reset output folder
 rm -rf ./Upload
