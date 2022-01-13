@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Blueprints>
+        <Blueprint>
+            <Id>
+                <TypeId>BlueprintDefinition</TypeId>
+                <SubtypeId>StoneOreToIngot</SubtypeId>
+            </Id>
+            <DisplayName>DisplayName_BlueprintClass_Ingots</DisplayName>
+            <Icon>Textures\GUI\Icons\ingot\ingot_class.dds</Icon>
+            <Prerequisites>
+                <Item Amount="1000" TypeId="Ore" SubtypeId="Stone" />
+            </Prerequisites>
+            <Results>
+                <Item Amount="42" TypeId="Ingot" SubtypeId="Stone" />
+                <Item Amount="30" TypeId="Ingot" SubtypeId="Iron" />
+                <Item Amount="2.4" TypeId="Ingot" SubtypeId="Nickel" />
+                <Item Amount="4.0" TypeId="Ingot" SubtypeId="Silicon" />
+            </Results>
+            <BaseProductionTimeInSeconds>8</BaseProductionTimeInSeconds>
+        </Blueprint>
+    </Blueprints>
+</Definitions>
