@@ -15,7 +15,8 @@
             "type": "Iron_02",
             "surfaceArea": 200,
             "startDepth": 50,
-            "depth": 300
+            "depth": 300,
+            "testColourHex": "fc0707"
         },
         {
             "id": 2,
@@ -29,14 +30,16 @@
             "type": "Taenite_01",
             "surfaceArea": 200,
             "startDepth": 50,
-            "depth": 300
+            "depth": 300,
+            "testColourHex": "914a34"
         },
         {
             "id": 4,
             "type": "Hapkeite_01",
             "surfaceArea": 200,
             "startDepth": 50,
-            "depth": 300
+            "depth": 300,
+            "testColourHex": "914a34"
         },
         {
             "id": 5,
@@ -58,7 +61,7 @@
             "surfaceArea": 200,
             "startDepth": 300,
             "depth": 300,
-            "testColourHex": "FF6BFC"
+            "testColourHex": "5ae7f4"
         },
         {
             "id": 101,
@@ -66,21 +69,23 @@
             "surfaceArea": 200,
             "startDepth": 300,
             "depth": 300,
-            "testColourHex": "FF6BFC"
+            "testColourHex": "5ae7f4"
         },
         {
             "id": 102,
             "type": "Olivine_01",
             "surfaceArea": 200,
             "startDepth": 300,
-            "depth": 300
+            "depth": 300,
+            "testColourHex": "5ae7f4"
         },
         {
             "id": 103,
             "type": "Dolomite_01",
             "surfaceArea": 200,
             "startDepth": 300,
-            "depth": 300
+            "depth": 300,
+            "testColourHex": "5ae7f4"
         },
         {
             "id": 104,
@@ -132,35 +137,40 @@
             "type": "Carnotite_01",
             "surfaceArea": 200,
             "startDepth": 600,
-            "depth": 300
+            "depth": 300,
+            "testColourHex": "2d9929"
         },
         {
             "id": 201,
             "type": "Autunite_01",
             "surfaceArea": 200,
             "startDepth": 600,
-            "depth": 300
+            "depth": 300,
+            "testColourHex": "2d9929"
         },
         {
             "id": 202,
             "type": "Uraniaurite_01",
             "surfaceArea": 200,
             "startDepth": 600,
-            "depth": 300
+            "depth": 300,
+            "testColourHex": "2d9929"
         },
         {
             "id": 203,
             "type": "Electrum_01",
             "surfaceArea": 200,
             "startDepth": 600,
-            "depth": 300
+            "depth": 300,
+            "testColourHex": "d6ab20"
         },
         {
             "id": 204,
             "type": "Porphyry_01",
             "surfaceArea": 200,
             "startDepth": 600,
-            "depth": 300
+            "depth": 300,
+            "testColourHex": "FFD26B"
         },
         {
             "id": 205,
@@ -168,28 +178,31 @@
             "surfaceArea": 200,
             "startDepth": 600,
             "depth": 300,
-            "testColourHex": "FFD26B"
+            "testColourHex": "d6ab20"
         },
         {
             "id": 206,
             "type": "Niggliite_01",
             "surfaceArea": 200,
             "startDepth": 600,
-            "depth": 300
+            "depth": 300,
+            "testColourHex": "fcfa6c"
         },
         {
             "id": 207,
             "type": "Cooperite_01",
             "surfaceArea": 200,
             "startDepth": 600,
-            "depth": 300
+            "depth": 300,
+            "testColourHex": "fcfa6c"
         },
         {
             "id": 208,
             "type": "Sperrylite_01",
             "surfaceArea": 200,
             "startDepth": 600,
-            "depth": 300
+            "depth": 300,
+            "testColourHex": "fcfa6c"
         },
         {
             "id": 209,
@@ -197,7 +210,7 @@
             "surfaceArea": 200,
             "startDepth": 600,
             "depth": 300,
-            "testColourHex": "FFD26B"
+            "testColourHex": "d6ab20"
         }
     ],
     "planets": [
