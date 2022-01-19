@@ -1,0 +1,379 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Definition xsi:type="MyObjectBuilder_VoxelMaterialModifierDefinition">
+    <Id Type="MyObjectBuilder_VoxelMaterialModifierDefinition" Subtype="snow01" />
+    <Options>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Iron_01" />
+        <Change From="Iron_02" To="Iron_01" />
+      </Option>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Heazlewoodite_01" />
+        <Change From="Iron_02" To="Heazlewoodite_01" />
+      </Option>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Taenite_01" />
+        <Change From="Iron_02" To="Taenite_01" />
+      </Option>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Hapkeite_01" />
+        <Change From="Iron_02" To="Hapkeite_01" />
+      </Option>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Sinoite_01" />
+        <Change From="Iron_02" To="Sinoite_01" />
+      </Option>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Quartz_01" />
+        <Change From="Iron_02" To="Quartz_01" />
+      </Option>
+      <Option Chance="0.10">
+        <Change From="Iron_01" To="Dolomite_01" />
+        <Change From="Iron_02" To="Dolomite_01" />
+      </Option>
+    </Options>
+  </Definition>
+  <Definition xsi:type="MyObjectBuilder_VoxelMaterialModifierDefinition">
+    <Id Type="MyObjectBuilder_VoxelMaterialModifierDefinition" Subtype="EarthSnowArea" />
+    <Options>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Iron_01" />
+        <Change From="Iron_02" To="Iron_01" />
+      </Option>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Heazlewoodite_01" />
+        <Change From="Iron_02" To="Heazlewoodite_01" />
+      </Option>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Taenite_01" />
+        <Change From="Iron_02" To="Taenite_01" />
+      </Option>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Hapkeite_01" />
+        <Change From="Iron_02" To="Hapkeite_01" />
+      </Option>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Sinoite_01" />
+        <Change From="Iron_02" To="Sinoite_01" />
+      </Option>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Quartz_01" />
+        <Change From="Iron_02" To="Quartz_01" />
+      </Option>
+      <Option Chance="0.10">
+        <Change From="Iron_01" To="Dolomite_01" />
+        <Change From="Iron_02" To="Dolomite_01" />
+      </Option>
+    </Options>
+  </Definition>
+  <Definition xsi:type="MyObjectBuilder_VoxelMaterialModifierDefinition">
+    <Id Type="MyObjectBuilder_VoxelMaterialModifierDefinition" Subtype="EarthForestArea" />
+    <Options>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Iron_01" />
+        <Change From="Iron_02" To="Iron_01" />
+      </Option>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Heazlewoodite_01" />
+        <Change From="Iron_02" To="Heazlewoodite_01" />
+      </Option>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Taenite_01" />
+        <Change From="Iron_02" To="Taenite_01" />
+      </Option>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Hapkeite_01" />
+        <Change From="Iron_02" To="Hapkeite_01" />
+      </Option>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Sinoite_01" />
+        <Change From="Iron_02" To="Sinoite_01" />
+      </Option>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Quartz_01" />
+        <Change From="Iron_02" To="Quartz_01" />
+      </Option>
+      <Option Chance="0.10">
+        <Change From="Iron_01" To="Dolomite_01" />
+        <Change From="Iron_02" To="Dolomite_01" />
+      </Option>
+    </Options>
+  </Definition>
+  <Definition xsi:type="MyObjectBuilder_VoxelMaterialModifierDefinition">
+    <Id Type="MyObjectBuilder_VoxelMaterialModifierDefinition" Subtype="EarthDesertArea" />
+    <Options>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Iron_01" />
+        <Change From="Iron_02" To="Iron_01" />
+      </Option>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Heazlewoodite_01" />
+        <Change From="Iron_02" To="Heazlewoodite_01" />
+      </Option>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Taenite_01" />
+        <Change From="Iron_02" To="Taenite_01" />
+      </Option>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Hapkeite_01" />
+        <Change From="Iron_02" To="Hapkeite_01" />
+      </Option>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Sinoite_01" />
+        <Change From="Iron_02" To="Sinoite_01" />
+      </Option>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Quartz_01" />
+        <Change From="Iron_02" To="Quartz_01" />
+      </Option>
+      <Option Chance="0.10">
+        <Change From="Iron_01" To="Dolomite_01" />
+        <Change From="Iron_02" To="Dolomite_01" />
+      </Option>
+    </Options>
+  </Definition>
+  <Definition xsi:type="MyObjectBuilder_VoxelMaterialModifierDefinition">
+    <Id Type="MyObjectBuilder_VoxelMaterialModifierDefinition" Subtype="Mars" />
+    <Options>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Iron_01" />
+        <Change From="Iron_02" To="Iron_01" />
+      </Option>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Heazlewoodite_01" />
+        <Change From="Iron_02" To="Heazlewoodite_01" />
+      </Option>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Taenite_01" />
+        <Change From="Iron_02" To="Taenite_01" />
+      </Option>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Hapkeite_01" />
+        <Change From="Iron_02" To="Hapkeite_01" />
+      </Option>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Sinoite_01" />
+        <Change From="Iron_02" To="Sinoite_01" />
+      </Option>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Quartz_01" />
+        <Change From="Iron_02" To="Quartz_01" />
+      </Option>
+      <Option Chance="0.10">
+        <Change From="Iron_01" To="Dolomite_01" />
+        <Change From="Iron_02" To="Dolomite_01" />
+      </Option>
+    </Options>
+  </Definition>
+  <Definition xsi:type="MyObjectBuilder_VoxelMaterialModifierDefinition">
+    <Id Type="MyObjectBuilder_VoxelMaterialModifierDefinition" Subtype="Moon" />
+    <Options>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Iron_01" />
+        <Change From="Iron_02" To="Iron_01" />
+      </Option>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Heazlewoodite_01" />
+        <Change From="Iron_02" To="Heazlewoodite_01" />
+      </Option>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Taenite_01" />
+        <Change From="Iron_02" To="Taenite_01" />
+      </Option>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Hapkeite_01" />
+        <Change From="Iron_02" To="Hapkeite_01" />
+      </Option>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Sinoite_01" />
+        <Change From="Iron_02" To="Sinoite_01" />
+      </Option>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Quartz_01" />
+        <Change From="Iron_02" To="Quartz_01" />
+      </Option>
+      <Option Chance="0.10">
+        <Change From="Iron_01" To="Dolomite_01" />
+        <Change From="Iron_02" To="Dolomite_01" />
+      </Option>
+    </Options>
+  </Definition>
+  <Definition xsi:type="MyObjectBuilder_VoxelMaterialModifierDefinition">
+    <Id Type="MyObjectBuilder_VoxelMaterialModifierDefinition" Subtype="Europa" />
+    <Options>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Iron_01" />
+        <Change From="Iron_02" To="Iron_01" />
+      </Option>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Heazlewoodite_01" />
+        <Change From="Iron_02" To="Heazlewoodite_01" />
+      </Option>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Taenite_01" />
+        <Change From="Iron_02" To="Taenite_01" />
+      </Option>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Hapkeite_01" />
+        <Change From="Iron_02" To="Hapkeite_01" />
+      </Option>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Sinoite_01" />
+        <Change From="Iron_02" To="Sinoite_01" />
+      </Option>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Quartz_01" />
+        <Change From="Iron_02" To="Quartz_01" />
+      </Option>
+      <Option Chance="0.10">
+        <Change From="Iron_01" To="Dolomite_01" />
+        <Change From="Iron_02" To="Dolomite_01" />
+      </Option>
+    </Options>
+  </Definition>
+  <Definition xsi:type="MyObjectBuilder_VoxelMaterialModifierDefinition">
+    <Id Type="MyObjectBuilder_VoxelMaterialModifierDefinition" Subtype="Titan" />
+    <Options>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Iron_01" />
+        <Change From="Iron_02" To="Iron_01" />
+      </Option>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Heazlewoodite_01" />
+        <Change From="Iron_02" To="Heazlewoodite_01" />
+      </Option>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Taenite_01" />
+        <Change From="Iron_02" To="Taenite_01" />
+      </Option>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Hapkeite_01" />
+        <Change From="Iron_02" To="Hapkeite_01" />
+      </Option>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Sinoite_01" />
+        <Change From="Iron_02" To="Sinoite_01" />
+      </Option>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Quartz_01" />
+        <Change From="Iron_02" To="Quartz_01" />
+      </Option>
+      <Option Chance="0.10">
+        <Change From="Iron_01" To="Dolomite_01" />
+        <Change From="Iron_02" To="Dolomite_01" />
+      </Option>
+    </Options>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_VoxelMaterialModifierDefinition">
+    <Id Type="MyObjectBuilder_VoxelMaterialModifierDefinition" Subtype="AlienDesertArea" />
+    <Options>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Iron_01" />
+        <Change From="Iron_02" To="Iron_01" />
+      </Option>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Heazlewoodite_01" />
+        <Change From="Iron_02" To="Heazlewoodite_01" />
+      </Option>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Taenite_01" />
+        <Change From="Iron_02" To="Taenite_01" />
+      </Option>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Hapkeite_01" />
+        <Change From="Iron_02" To="Hapkeite_01" />
+      </Option>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Sinoite_01" />
+        <Change From="Iron_02" To="Sinoite_01" />
+      </Option>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Quartz_01" />
+        <Change From="Iron_02" To="Quartz_01" />
+      </Option>
+      <Option Chance="0.10">
+        <Change From="Iron_01" To="Dolomite_01" />
+        <Change From="Iron_02" To="Dolomite_01" />
+      </Option>
+    </Options>
+  </Definition>
+  <Definition xsi:type="MyObjectBuilder_VoxelMaterialModifierDefinition">
+    <Id Type="MyObjectBuilder_VoxelMaterialModifierDefinition" Subtype="AlienIcelandArea" />
+    <Options>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Iron_01" />
+        <Change From="Iron_02" To="Iron_01" />
+      </Option>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Heazlewoodite_01" />
+        <Change From="Iron_02" To="Heazlewoodite_01" />
+      </Option>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Taenite_01" />
+        <Change From="Iron_02" To="Taenite_01" />
+      </Option>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Hapkeite_01" />
+        <Change From="Iron_02" To="Hapkeite_01" />
+      </Option>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Sinoite_01" />
+        <Change From="Iron_02" To="Sinoite_01" />
+      </Option>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Quartz_01" />
+        <Change From="Iron_02" To="Quartz_01" />
+      </Option>
+      <Option Chance="0.10">
+        <Change From="Iron_01" To="Dolomite_01" />
+        <Change From="Iron_02" To="Dolomite_01" />
+      </Option>
+    </Options>
+  </Definition>
+  <Definition xsi:type="MyObjectBuilder_VoxelMaterialModifierDefinition">
+    <Id Type="MyObjectBuilder_VoxelMaterialModifierDefinition" Subtype="AlienForestArea" />
+    <Options>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Iron_01" />
+        <Change From="Iron_02" To="Iron_01" />
+      </Option>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Heazlewoodite_01" />
+        <Change From="Iron_02" To="Heazlewoodite_01" />
+      </Option>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Taenite_01" />
+        <Change From="Iron_02" To="Taenite_01" />
+      </Option>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Hapkeite_01" />
+        <Change From="Iron_02" To="Hapkeite_01" />
+      </Option>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Sinoite_01" />
+        <Change From="Iron_02" To="Sinoite_01" />
+      </Option>
+      <Option Chance="0.15">
+        <Change From="Iron_01" To="Quartz_01" />
+        <Change From="Iron_02" To="Quartz_01" />
+      </Option>
+      <Option Chance="0.10">
+        <Change From="Iron_01" To="Dolomite_01" />
+        <Change From="Iron_02" To="Dolomite_01" />
+      </Option>
+    </Options>
+  </Definition>
+  <Definition xsi:type="MyObjectBuilder_VoxelMaterialModifierDefinition">
+    <Id Type="MyObjectBuilder_VoxelMaterialModifierDefinition" Subtype="grass01" />
+    <Options>
+      <Option Chance="0.80">
+        <!-- No change -->
+      </Option>
+      <Option Chance="0.20">
+        <Change From="Iron_01" To="Ice_01" />
+        <Change From="Iron_02" To="Ice_01" />
+      </Option>
+    </Options>
+  </Definition>
+</Definitions>
