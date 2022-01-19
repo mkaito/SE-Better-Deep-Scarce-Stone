@@ -8,8 +8,5 @@
 # Assembled output
 /Upload/
 
-# Passwerds
-publish.sh
-
 # Vim
 *.swp
