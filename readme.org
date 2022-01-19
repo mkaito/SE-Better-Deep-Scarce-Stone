@@ -1,0 +1,159 @@
+* Better Deep Scarce Stone
+
+This mod began life as an effort to update Better [[https://steamcommunity.com/sharedfiles/filedetails/?id=2281727435][Deep Scarce Ores]], whose author
+appears to be on a bit of a break. I took his ore values and just merged
+EarthLike and Moon into Pertam, called it a day. After playing with the
+resulting mod, I began to feel the need to adjust the numbers a bit, to better
+suit my usual scenario. The result is this mod. I hope you'll find it enjoyable.
+
+** Installation
+
+Since Keen can apparently not get their dependency system straight, this mod
+does not explicitly depend on Better Stone. You do, however, need both
+installed, added to your world, AND THIS MOD ABOVE. Please make sure you get
+that right. There's nothing I can do to make any of this automatic, I'm sorry.
+
+In fact, adding it as a dependency on the workshop, breaks it in game. Thanks,
+Keen.
+
+** Conflicts
+
+1. Mods that modify the ore maps or vanilla planet definitions will likely not
+   get along with this mod at all. Whichever is on top in the mod list will have
+   their definitions take effect.
+2. Modded planets are an entirely separate affair from this mod. They have their
+   own ore maps and planet defs, and whatever is in them is what you will see.
+   This mod does not automatically do anything to non-vanilla planets.
+3. Modded ores almost certainly ship with planet defs, so see point 1 about that.
+4. Pretty much any other kind of mod should have zero issues with this, but
+   please let me know if you run into issues. Preferrably on GitHub, so I can
+   keep track of it.
+
+** Ore distribution and scarcity
+
+The basic idea was pioneered by the venerable Scarce Resources years ago. The
+starter planets have abundant Iron, Nickel, and Silicon, with more rare but
+present Cobalt. Magnesium was sprinkled in to allow for play with aggressive
+NPC. You'll find Magnesium in a few (3-5) veins on each starter planet, which
+are very hard to find, as well as more commonly, but in much smaller quantity,
+in surface boulders. The idea is to get you scraping by until you can get to
+Triton, which is ripe with the stuff. If you play without WeaponCore or Modular
+Encounter Systems, you'll have a pretty easy time. But then, you're probably not
+playing for the combat anyway in that case.
+
+Once you get yourself into space (or not, in the case of Pertam, more on that
+below), you'll find that asteroids have little of anything. Mainly Icy Iron, a
+poor iron ore that refines into both iron and ice. This is the only thing you'll
+find up here, in order to encourage planetary mining operations and logistics.
+
+The Moon will have both Silver, for medical equipment, and Gold, for jump
+drives.
+
+Pertam has no moon of its own, and so has a sprinkle of both. You might find a
+few days trying to find the stuff, but I promise it's there. I triple checked
+the ore maps, and played on Pertam myself.
+
+Once you can jump, you'll want to make your way to either Mars, for Platinum, or
+Alien, for Uranium. Either works, depending on what you need most.
+
+Once you're ready to jump, I advice you plan for a prolonged stay at either
+planet. You'll likely spend several in-game days looking for the ore you want.
+It won't be a quick trip, unless you get lucky.
+
+A special Iron ore, called Dense Iron (Fe+) contains vast amounts of Iron, and
+refines very quickly. If you have any large projects in mind, I recommend you
+seek out a deposit.
+
+** Planets and Ores summary
+
+If you're just looking for the tl;dr, this is it:
+
+If I'm on X, what will I find?
+
+- EarthLike: Fe, Fe+, Ni, Si, Co
+- Moon, Europa: Fe, Ni, Si, Au, Ag
+- Mars: Fe, Fe+, Ni, Si, Co, Pt
+- Alien: Fe, Fe+, Ni, Si, Mg, Au, U
+- Titan: Fe, Ni, Si, Au, Ag, Pt
+- Triton: Fe, Fe+, Ni, Co, Mg
+- Pertam: Fe, Fe+, Ni, Si, Co, Mg, Au, Ag
+
+
+If I want X, where is it most plentiful?
+
+- Fe, Fe+: Triton
+- Ni: Europa
+- Si: EarthLike, Moon
+- Co: Pertam, EarthLike
+- Mg: Triton
+- Ag: Europa
+- Au: Titan
+- Pt: Mars
+- U: Alien
+
+** Ore deposits
+
+One of the main principles behind this mod is that ore deposits should be quite
+rich. When you find one, you'll probably want to set up a permanent mining
+operation on top of it. To compensate for this bounty, you'll be searching far
+longer for them. Deposits are both less frequent, and much deeper.
+
+- T1 ores, those yielding Iron, Nickel, and Silicon, will be found starting at 50m deep.
+- T2 ores, those yielding Cobalt and Mangesium, will be found starting at 300m deep.
+- T3 ores, those yielding Silver, Gold, Platinum and Uranium, will be found
+  starting at 600m deep.
+
+All deposits are 300m deep, and most are very, very wide.
+
+You might want to brush up on your piston mining rigs, but I suggest you set up
+permanent conveyors from the surface to the deposit, lest you enrage Clang.
+
+** Intended gameplay scenario
+
+This mod was configured with a fairly specific scenario in mind. That doesn't
+mean you can't use it if you want it your way, of course, but it helps to
+understand my choices.
+
+First, I play with [[https://steamcommunity.com/sharedfiles/filedetails/?id=2539299261][Wasteland Encounters]] and [[https://steamcommunity.com/workshop/filedetails/?id=1542310718][AwwScrap]]. The first spawns large
+wrecks (some hostile, some not) that you can salvage. Finding one of these is
+generally my first stop. The wrecks don't contain anything fancy. Some cobalt, a
+little ammo you can dismantle into magnesium, definitely no platinum or uranium.
+AwwScrap significantly tones down the raw quantity of stuff you get from the
+wrecks, bottlenecks the process by forcing you to refine the scrap first.
+
+Second, [[https://steamcommunity.com/sharedfiles/filedetails/?id=1682499145][Tiered Tech Blocks]] adds Tech components to the game, which spawn in
+small quantities in small NPC grids, including Unknown Signals, and in larger
+amounts in large NPC grids, such as the wrecks. An addon mod to Tiered Tech
+Blocks called [[https://steamcommunity.com/sharedfiles/filedetails/?id=1709586832][Tech Blocks Everywhere]] allows you to assemble and dismantle Tech
+components. This will provide a (very, very small) early source of all higher
+tier ingots, including Platinum and Uranium. It will be enough to build yourself
+a set of T4 hand tools, and maybe run ONE small grid small reactor for a while,
+but not much more. Rather than having zero platinum and uranium until you have
+ALL of the platinum and uranium once you find a deposit, this provides a
+sprinkling of fancy ingots, and encourages you to pick and choose where to spend
+it.
+
+Third, I play with [[https://steamcommunity.com/workshop/filedetails/?id=1521905890][MES]] (which Wasteland Encounters requires) and extremely
+aggressive NPC factions. The early scarcity of Magnesium means I'll probably be
+constantly putting out literal and figurative fires, and forcing me to spend
+what little fancy ingots I get from Tech components on defense rather than
+progress.
+
+To help you get started faster, refining stone in a survival kit yields slightly
+more ingots and less gravel than vanilla. To make up for it, refining stone in a
+proper refinery yields hardly any ingots, and a lot of gravel. If you play with
+a gravel sifter or concrete mod, you'll actually be happy about that though.
+
+** Appreciation & Hugs
+
+- Lemmiwinks for creating the [[https://github.com/asrbic/Procedural_Ore_Generator][Procedural Ore Generator]], which is how I created
+  the ore maps.
+- Chrido and Darian Stephens for creating [[https://steamcommunity.com/sharedfiles/filedetails/?id=831739660][Scarce Resources]], and introducing me
+  to the idea that having everything within 300m of literally anywhere is
+  boring.
+- DranKof for [[https://steamcommunity.com/sharedfiles/filedetails/?id=406244471][Better Stone]], and introducing me to the idea that more ores are
+  more fun.
+- Ghost722nd for [[https://steamcommunity.com/sharedfiles/filedetails/?id=1540170706][Deep Ores]], and introducing me to actual large mining operations,
+  rather than just a small mining ship.
+- Cak for the original [[https://steamcommunity.com/sharedfiles/filedetails/?id=2281727435][Better Deep Scarce Ores]], which served as a foundation and
+  motivation for creating this mod.
