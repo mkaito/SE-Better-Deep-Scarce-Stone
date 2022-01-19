@@ -60,13 +60,7 @@ Once you're ready to jump, I advice you plan for a prolonged stay at either
 planet. You'll likely spend several in-game days looking for the ore you want.
 It won't be a quick trip, unless you get lucky.
 
-A special Iron ore, called Dense Iron (Fe+) contains vast amounts of Iron, and
-refines very quickly. If you have any large projects in mind, I recommend you
-seek out a deposit.
-
 ** Planets and Ores summary
-
-If you're just looking for the tl;dr, this is it:
 
 If I'm on X, what will I find?
 
@@ -98,15 +92,9 @@ rich. When you find one, you'll probably want to set up a permanent mining
 operation on top of it. To compensate for this bounty, you'll be searching far
 longer for them. Deposits are both less frequent, and much deeper.
 
-- T1 ores, those yielding Iron, Nickel, and Silicon, will be found starting at 50m deep.
-- T2 ores, those yielding Cobalt and Mangesium, will be found starting at 300m deep.
-- T3 ores, those yielding Silver, Gold, Platinum and Uranium, will be found
-  starting at 600m deep.
-
-All deposits are 300m deep, and most are very, very wide.
-
-You might want to brush up on your piston mining rigs, but I suggest you set up
-permanent conveyors from the surface to the deposit, lest you enrage Clang.
+- T1 (Fe, Ni, Si) start at 50m
+- T2 (Co, Mg) start at 300m
+- T3 (Ag, Au, Pt, U) start at 600m
 
 ** Intended gameplay scenario
 
