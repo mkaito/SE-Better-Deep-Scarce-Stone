@@ -8,9 +8,9 @@ suit my usual scenario. The result is this mod. I hope you'll find it enjoyable.
 
 ** Installation
 
-Since Keen can apparently not get their dependency system straight, this mod
-does not explicitly depend on Better Stone. You do, however, need both
-installed, added to your world, AND THIS MOD ABOVE. Please make sure you get
+Since the dependency system in SE is kinda broken, this mod does not explicitly
+depend on [[https://steamcommunity.com/sharedfiles/filedetails/?id=406244471][Better Stone]]. You do, however, need both installed, added to your
+world, AND THIS MOD ABOVE Better Stone (below if DS). Please make sure you get
 that right. There's nothing I can do to make any of this automatic, I'm sorry.
 
 In fact, adding it as a dependency on the workshop, breaks it in game. Thanks,
@@ -121,11 +121,10 @@ ALL of the platinum and uranium once you find a deposit, this provides a
 sprinkling of fancy ingots, and encourages you to pick and choose where to spend
 it.
 
-Third, I play with [[https://steamcommunity.com/workshop/filedetails/?id=1521905890][MES]] (which Wasteland Encounters requires) and extremely
-aggressive NPC factions. The early scarcity of Magnesium means I'll probably be
-constantly putting out literal and figurative fires, and forcing me to spend
-what little fancy ingots I get from Tech components on defense rather than
-progress.
+Third, I play with Modular Encounter Systems and extremely aggressive NPC
+factions. The early scarcity of Magnesium means I'll probably be constantly
+putting out literal and figurative fires, and forcing me to spend what little
+fancy ingots I get from Tech components on defense rather than progress.
 
 To help you get started faster, refining stone in a survival kit yields slightly
 more ingots and less gravel than vanilla. To make up for it, refining stone in a
