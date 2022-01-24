@@ -4,11 +4,9 @@ IFS=$'\n\t'
 
 # WSL2 Paths
 # GAMEDATA='/mnt/c/Program Files (x86)/Steam/steamapps/common/SpaceEngineers/Content/Data'
-# GAMEMODS='/mnt/c/Users/chris/AppData/Roaming/SpaceEngineers/Mods'
 
 # Linux Paths
 GAMEDATA="$HOME/.steam/steam/steamapps/common/SpaceEngineers/Content/Data"
-GAMEMODS="$HOME/Games/Saved Games/SpaceEngineers/Mods"
 
 # Generate ore maps
 # NOTE: Does not run on Linux
@@ -35,6 +33,7 @@ cp Procedural_Ore_Generator/*.sbc ./Upload/Data
 
 # Manual overrides
 echo '** Merging manual overrides'
-rsync -rtL ./Output/ ./Upload/
+rsync -rtL ./Assets/ ./Upload/
+rsync -rtL ./Data/ ./Upload/
 
 echo '** Done'
