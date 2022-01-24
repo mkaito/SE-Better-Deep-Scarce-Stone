@@ -8,6 +8,8 @@
 # Assembled output
 /Upload/
 /mod.vdf
+/description.bb
 
 # Vim
 *.swp
+/readme.bb
