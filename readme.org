@@ -6,6 +6,28 @@ EarthLike and Moon into Pertam, called it a day. After playing with the
 resulting mod, I began to feel the need to adjust the numbers a bit, to better
 suit my usual scenario. The result is this mod. I hope you'll find it enjoyable.
 
+This project is available on [[https://github.com/mkaito/SE-Better-Deep-Scarce-Stone][GitHub]].
+
+** Synopsis
+
+EarthLike has Iron, Nickel, Silicon, Cobalt and small quantities of Magnesium in
+surface boulders. You'll want to head to the Moon for Gold and Silver, Mars for
+Platinum, Alien for Uranium. Magnesium is available in varying small quantities
+everywhere, and large quantities on Triton.
+
+Pertam has the same as EarthLike, but also small quantities of Silver and Gold,
+since it doesn't have a local moon, as well as actual (rare) Magnesium deposits.
+
+Technically I guess you can start on Triton, since it has all the basics in some
+quantity.
+
+Processing stone with a survival kit is slow but yields increased ingots and
+less gravel. Doing so with a refinery will yield only trace amounts of ingots,
+but much more gravel. This is to help those that start with a vanilla drop pod,
+push the player towards finding actual ore rather than relying on stone for
+anything but getting started, but also to help with mods that actually use
+gravel, such as [[https://steamcommunity.com/sharedfiles/filedetails/?id=2298956701][AQD Concrete]].
+
 ** Installation
 
 Since the dependency system in SE is kinda broken, this mod does not explicitly
@@ -29,7 +51,7 @@ Keen.
    please let me know if you run into issues. Preferrably on GitHub, so I can
    keep track of it.
 
-** Ore distribution and scarcity
+** Ore Distribution and Scarcity
 
 The basic idea was pioneered by the venerable Scarce Resources years ago. The
 starter planets have abundant Iron, Nickel, and Silicon, with more rare but
@@ -60,7 +82,7 @@ Once you're ready to jump, I advice you plan for a prolonged stay at either
 planet. You'll likely spend several in-game days looking for the ore you want.
 It won't be a quick trip, unless you get lucky.
 
-** Planets and Ores summary
+** Planets and Ores Summary
 
 If I'm on X, what will I find?
 
@@ -85,7 +107,7 @@ If I want X, where is it most plentiful?
 - Pt: Mars
 - U: Alien
 
-** Ore deposits
+** Ore Deposits
 
 One of the main principles behind this mod is that ore deposits should be quite
 rich. When you find one, you'll probably want to set up a permanent mining
@@ -96,40 +118,29 @@ longer for them. Deposits are both less frequent, and much deeper.
 - T2 (Co, Mg) start at 300m
 - T3 (Ag, Au, Pt, U) start at 600m
 
-** Intended gameplay scenario
+** Intended Gameplay Scenario
 
-This mod was configured with a fairly specific scenario in mind. That doesn't
-mean you can't use it if you want it your way, of course, but it helps to
-understand my choices.
+Here are some notes and recommendations for you:
 
-First, I play with [[https://steamcommunity.com/sharedfiles/filedetails/?id=2539299261][Wasteland Encounters]] and [[https://steamcommunity.com/workshop/filedetails/?id=1542310718][AwwScrap]]. The first spawns large
-wrecks (some hostile, some not) that you can salvage. Finding one of these is
-generally my first stop. The wrecks don't contain anything fancy. Some cobalt, a
-little ammo you can dismantle into magnesium, definitely no platinum or uranium.
-AwwScrap significantly tones down the raw quantity of stuff you get from the
-wrecks, bottlenecks the process by forcing you to refine the scrap first.
+- I recommend a long range ore detector mod. You probably won't find any T2 and
+  T3 deposits without one.
+- I would suggest you spawn with something mobile, rather than the vanilla drop
+  pod. It's very easy to land in the middle of 20Km of nothing.
+- If you don't start yourself with a large grid ship or rover, I would suggest
+  [[https://steamcommunity.com/sharedfiles/filedetails/?id=2539299261][Wasteland Encounters]], and your first step being finding a large wreck to get
+  you started.
+- Some of the mods I use:
+  - A jetpack nerf
+  - [[https://steamcommunity.com/sharedfiles/filedetails/?id=2547246713][Eat. Drink. Sleep. Repeat!]], [[https://steamcommunity.com/sharedfiles/filedetails/?id=2570427696][Plant and Cook]] & [[https://steamcommunity.com/sharedfiles/filedetails/?id=2577880987][Pressurize Your Room!]]
+  - [[https://steamcommunity.com/workshop/filedetails/?id=1542310718][AwwScrap]]
+  - [[https://steamcommunity.com/sharedfiles/filedetails/?id=1682499145][Tiered Tech Blocks]]
+  - [[https://steamcommunity.com/sharedfiles/filedetails/?id=1709586832][Tech Blocks Everywhere]]
+  - Some very angry NPCs
+  - Some WeaponCore boomsticks
 
-Second, [[https://steamcommunity.com/sharedfiles/filedetails/?id=1682499145][Tiered Tech Blocks]] adds Tech components to the game, which spawn in
-small quantities in small NPC grids, including Unknown Signals, and in larger
-amounts in large NPC grids, such as the wrecks. An addon mod to Tiered Tech
-Blocks called [[https://steamcommunity.com/sharedfiles/filedetails/?id=1709586832][Tech Blocks Everywhere]] allows you to assemble and dismantle Tech
-components. This will provide a (very, very small) early source of all higher
-tier ingots, including Platinum and Uranium. It will be enough to build yourself
-a set of T4 hand tools, and maybe run ONE small grid small reactor for a while,
-but not much more. Rather than having zero platinum and uranium until you have
-ALL of the platinum and uranium once you find a deposit, this provides a
-sprinkling of fancy ingots, and encourages you to pick and choose where to spend
-it.
-
-Third, I play with Modular Encounter Systems and extremely aggressive NPC
-factions. The early scarcity of Magnesium means I'll probably be constantly
-putting out literal and figurative fires, and forcing me to spend what little
-fancy ingots I get from Tech components on defense rather than progress.
-
-To help you get started faster, refining stone in a survival kit yields slightly
-more ingots and less gravel than vanilla. To make up for it, refining stone in a
-proper refinery yields hardly any ingots, and a lot of gravel. If you play with
-a gravel sifter or concrete mod, you'll actually be happy about that though.
+Be advised that the combination of Tech Blocks Everywhere and Wasteland
+Encounters will land you with huge amounts of tech components early on, which
+you can disassemble into Gold, Platinum and Uranium.
 
 ** Appreciation & Hugs
 
@@ -140,7 +151,7 @@ a gravel sifter or concrete mod, you'll actually be happy about that though.
   boring.
 - DranKof for [[https://steamcommunity.com/sharedfiles/filedetails/?id=406244471][Better Stone]], and introducing me to the idea that more ores are
   more fun.
-- Ghost722nd for [[https://steamcommunity.com/sharedfiles/filedetails/?id=1540170706][Deep Ores]], and introducing me to actual large mining operations,
-  rather than just a small mining ship.
+- Ghost722nd for [[https://steamcommunity.com/sharedfiles/filedetails/?id=1540170706][Deep Ores]], and introducing me to actual large mining
+  operations, rather than just a small mining ship.
 - Cak for the original [[https://steamcommunity.com/sharedfiles/filedetails/?id=2281727435][Better Deep Scarce Ores]], which served as a foundation and
   motivation for creating this mod.
