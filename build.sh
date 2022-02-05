@@ -3,16 +3,16 @@ set -euo pipefail
 IFS=$'\n\t'
 
 # WSL2 Paths
-# GAMEDATA='/mnt/c/Program Files (x86)/Steam/steamapps/common/SpaceEngineers/Content/Data'
+GAMEDATA='/mnt/c/Program Files (x86)/Steam/steamapps/common/SpaceEngineers/Content/Data'
 
 # Linux Paths
-GAMEDATA="$HOME/.steam/steam/steamapps/common/SpaceEngineers/Content/Data"
+# GAMEDATA="$HOME/.steam/steam/steamapps/common/SpaceEngineers/Content/Data"
 
 # Generate ore maps
 # NOTE: Does not run on Linux
-# pushd Procedural_Ore_Generator
-#   java.exe -Xms2G -Xmx16G -jar Procedural_Ore_Generator.jar
-# popd
+pushd Procedural_Ore_Generator
+  java.exe -Xms2G -Xmx16G -jar Procedural_Ore_Generator.jar
+popd
 
 # Reset output folder
 rm -rf ./Upload
