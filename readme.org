@@ -6,20 +6,24 @@ EarthLike and Moon into Pertam, called it a day. After playing with the
 resulting mod, I began to feel the need to adjust the numbers a bit, to better
 suit my usual scenario. The result is this mod. I hope you'll find it enjoyable.
 
+Supports Deuterium (2H) ore from [[https://steamcommunity.com/sharedfiles/filedetails/?id=2558149005][Life'Tech-Powers]]. If you don't use the mod,
+that's fine. Any Deuterium patches will just turn back into stone.
+
 This project is available on [[https://github.com/mkaito/SE-Better-Deep-Scarce-Stone][GitHub]].
 
 ** Synopsis
 
 EarthLike has Iron, Nickel, Silicon, Cobalt and small quantities of Magnesium in
 surface boulders. You'll want to head to the Moon for Gold and Silver, Mars for
-Platinum, Alien for Uranium. Magnesium is available in varying small quantities
-everywhere, and large quantities on Triton.
+Platinum, Alien for Uranium and Deuterium. Magnesium is available in varying
+small quantities everywhere, and large quantities on Triton.
 
 Pertam has the same as EarthLike, but also small quantities of Silver and Gold,
-since it doesn't have a local moon, as well as actual (rare) Magnesium deposits.
+since it doesn't have a local moon, as well as actual (rare) Magnesium deposits,
+since I have yet to see any boulders on Pertam.
 
-Technically I guess you can start on Triton, since it has all the basics in some
-quantity.
+Technically, I guess you can start on Triton, since it has all the basics in
+some quantity, but I wouldn't recommend it.
 
 Processing stone with a survival kit is slow but yields increased ingots and
 less gravel. Doing so with a refinery will yield only trace amounts of ingots,
@@ -51,37 +55,6 @@ Keen.
    please let me know if you run into issues. Preferrably on GitHub, so I can
    keep track of it.
 
-** Ore Distribution and Scarcity
-
-The basic idea was pioneered by the venerable Scarce Resources years ago. The
-starter planets have abundant Iron, Nickel, and Silicon, with more rare but
-present Cobalt. Magnesium was sprinkled in to allow for play with aggressive
-NPC. You'll find Magnesium in a few (3-5) veins on each starter planet, which
-are very hard to find, as well as more commonly, but in much smaller quantity,
-in surface boulders. The idea is to get you scraping by until you can get to
-Triton, which is ripe with the stuff. If you play without WeaponCore or Modular
-Encounter Systems, you'll have a pretty easy time. But then, you're probably not
-playing for the combat anyway in that case.
-
-Once you get yourself into space (or not, in the case of Pertam, more on that
-below), you'll find that asteroids have little of anything. Mainly Icy Iron, a
-poor iron ore that refines into both iron and ice. This is the only thing you'll
-find up here, in order to encourage planetary mining operations and logistics.
-
-The Moon will have both Silver, for medical equipment, and Gold, for jump
-drives.
-
-Pertam has no moon of its own, and so has a sprinkle of both. You might find a
-few days trying to find the stuff, but I promise it's there. I triple checked
-the ore maps, and played on Pertam myself.
-
-Once you can jump, you'll want to make your way to either Mars, for Platinum, or
-Alien, for Uranium. Either works, depending on what you need most.
-
-Once you're ready to jump, I advice you plan for a prolonged stay at either
-planet. You'll likely spend several in-game days looking for the ore you want.
-It won't be a quick trip, unless you get lucky.
-
 ** Planets and Ores Summary
 
 If I'm on X, what will I find?
@@ -89,7 +62,7 @@ If I'm on X, what will I find?
 - EarthLike: Fe, Fe+, Ni, Si, Co
 - Moon, Europa: Fe, Ni, Si, Au, Ag
 - Mars: Fe, Fe+, Ni, Si, Co, Pt
-- Alien: Fe, Fe+, Ni, Si, Mg, Au, U
+- Alien: Fe, Fe+, Ni, Si, Mg, Au, U, 2H
 - Titan: Fe, Ni, Si, Au, Ag, Pt
 - Triton: Fe, Fe+, Ni, Co, Mg
 - Pertam: Fe, Fe+, Ni, Si, Co, Mg, Au, Ag
@@ -106,6 +79,7 @@ If I want X, where is it most plentiful?
 - Au: Titan
 - Pt: Mars
 - U: Alien
+- H2: Alien
 
 ** Ore Deposits
 
@@ -114,33 +88,21 @@ rich. When you find one, you'll probably want to set up a permanent mining
 operation on top of it. To compensate for this bounty, you'll be searching far
 longer for them. Deposits are both less frequent, and much deeper.
 
-- T1 (Fe, Ni, Si) start at 50m
-- T2 (Co, Mg) start at 300m
-- T3 (Ag, Au, Pt, U) start at 600m
+- T1 (Fe, Ni, Si) at 50m
+- T2 (Co, Mg, Ag) at 150m
+- T3 (Au, Pt, U, 2H) at 300m
+- T4 (2H+) at 400m
 
 ** Intended Gameplay Scenario
 
 Here are some notes and recommendations for you:
 
-- I recommend a long range ore detector mod. You probably won't find any T2 and
-  T3 deposits without one.
-- I would suggest you spawn with something mobile, rather than the vanilla drop
-  pod. It's very easy to land in the middle of 20Km of nothing.
+- I recommend a long range ore detector mod. You probably won't find any T3
+  deposits without one.
+- I would suggest you spawn with something mobile, like the [[https://steamcommunity.com/sharedfiles/filedetails/?id=2471313282][New Spawn Pods mod]].
 - If you don't start yourself with a large grid ship or rover, I would suggest
   [[https://steamcommunity.com/sharedfiles/filedetails/?id=2539299261][Wasteland Encounters]], and your first step being finding a large wreck to get
   you started.
-- Some of the mods I use:
-  - A jetpack nerf
-  - [[https://steamcommunity.com/sharedfiles/filedetails/?id=2547246713][Eat. Drink. Sleep. Repeat!]], [[https://steamcommunity.com/sharedfiles/filedetails/?id=2570427696][Plant and Cook]] & [[https://steamcommunity.com/sharedfiles/filedetails/?id=2577880987][Pressurize Your Room!]]
-  - [[https://steamcommunity.com/workshop/filedetails/?id=1542310718][AwwScrap]]
-  - [[https://steamcommunity.com/sharedfiles/filedetails/?id=1682499145][Tiered Tech Blocks]]
-  - [[https://steamcommunity.com/sharedfiles/filedetails/?id=1709586832][Tech Blocks Everywhere]]
-  - Some very angry NPCs
-  - Some WeaponCore boomsticks
-
-Be advised that the combination of Tech Blocks Everywhere and Wasteland
-Encounters will land you with huge amounts of tech components early on, which
-you can disassemble into Gold, Platinum and Uranium.
 
 ** Appreciation & Hugs
 
@@ -155,3 +117,4 @@ you can disassemble into Gold, Platinum and Uranium.
   operations, rather than just a small mining ship.
 - Cak for the original [[https://steamcommunity.com/sharedfiles/filedetails/?id=2281727435][Better Deep Scarce Ores]], which served as a foundation and
   motivation for creating this mod.
+- Kuvat for his work on the [[https://steamcommunity.com/sharedfiles/filedetails/?id=2558149005][Life'Tech]] mods.
