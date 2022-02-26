@@ -9,6 +9,13 @@ suit my usual scenario. The result is this mod. I hope you'll find it enjoyable.
 Supports Deuterium (2H) ore from [[https://steamcommunity.com/sharedfiles/filedetails/?id=2558149005][Life'Tech-Powers]]. If you don't use the mod,
 that's fine. Any Deuterium patches will just turn back into stone.
 
+I began the project with ore depths up to 1200m, but very quickly found myself
+wrestling with the limitations of SE's subpar voxel scanning code. The result
+was that, no matter the range of your modded ore detector, you would only find
+the deeper ores by accident, never on purpose. I decided to make the ores much
+more shallow, and hope Keen will eventually get around to optimizing this much
+neglected bit of their game.
+
 This project is available on [[https://github.com/mkaito/SE-Better-Deep-Scarce-Stone][GitHub]].
 
 ** Synopsis
