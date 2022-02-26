@@ -19,6 +19,7 @@ cat << EOF > mod.vdf
   "appid"             "244850"
   "publishedfileid"   "2724252237"
   "contentfolder"     "$PWD/Upload"
+  "previewfile"     "$PWD/preview.jpg"
   "description"       "$(cat $PWD/description.bb)"
 }
 EOF
