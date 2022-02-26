@@ -23,4 +23,4 @@ cat << EOF > mod.vdf
 }
 EOF
 
-"$(command -v steamcmd)" +login mkaito "$(gopass show games/steam)" +workshop_build_item "$(readlink -f ./mod.vdf)" +quit
+"$(command -v steamcmd)" +login mkaito "${STEAMPASSWORD:-$(gopass show games/steam)}" +workshop_build_item "$(readlink -f ./mod.vdf)" +quit
