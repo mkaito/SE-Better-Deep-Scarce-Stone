@@ -122,21 +122,21 @@
             "id": 108,
             "type": "Galena_01",
             "surfaceArea": 200,
-            "startDepth": 200,
+            "startDepth": 150,
             "depth": 300
         },
         {
             "id": 109,
             "type": "Chlorargyrite_01",
             "surfaceArea": 200,
-            "startDepth": 200,
+            "startDepth": 150,
             "depth": 300
         },
         {
             "id": 200,
             "type": "Carnotite_01",
             "surfaceArea": 200,
-            "startDepth": 400,
+            "startDepth": 300,
             "depth": 300,
             "testColourHex": "2d9929"
         },
@@ -144,7 +144,7 @@
             "id": 201,
             "type": "Autunite_01",
             "surfaceArea": 200,
-            "startDepth": 400,
+            "startDepth": 300,
             "depth": 300,
             "testColourHex": "2d9929"
         },
@@ -152,7 +152,7 @@
             "id": 202,
             "type": "Uraniaurite_01",
             "surfaceArea": 200,
-            "startDepth": 400,
+            "startDepth": 300,
             "depth": 300,
             "testColourHex": "2d9929"
         },
@@ -160,7 +160,7 @@
             "id": 203,
             "type": "Electrum_01",
             "surfaceArea": 200,
-            "startDepth": 200,
+            "startDepth": 300,
             "depth": 300,
             "testColourHex": "d6ab20"
         },
@@ -168,7 +168,7 @@
             "id": 204,
             "type": "Porphyry_01",
             "surfaceArea": 200,
-            "startDepth": 200,
+            "startDepth": 300,
             "depth": 300,
             "testColourHex": "FFD26B"
         },
@@ -176,7 +176,7 @@
             "id": 205,
             "type": "Petzite_01",
             "surfaceArea": 200,
-            "startDepth": 200,
+            "startDepth": 300,
             "depth": 300,
             "testColourHex": "d6ab20"
         },
@@ -184,7 +184,7 @@
             "id": 206,
             "type": "Niggliite_01",
             "surfaceArea": 200,
-            "startDepth": 400,
+            "startDepth": 300,
             "depth": 300,
             "testColourHex": "fcfa6c"
         },
@@ -192,7 +192,7 @@
             "id": 207,
             "type": "Cooperite_01",
             "surfaceArea": 200,
-            "startDepth": 400,
+            "startDepth": 300,
             "depth": 300,
             "testColourHex": "fcfa6c"
         },
@@ -200,7 +200,7 @@
             "id": 208,
             "type": "Sperrylite_01",
             "surfaceArea": 200,
-            "startDepth": 400,
+            "startDepth": 300,
             "depth": 300,
             "testColourHex": "fcfa6c"
         },
@@ -208,7 +208,7 @@
             "id": 209,
             "type": "Pyrite_01",
             "surfaceArea": 200,
-            "startDepth": 200,
+            "startDepth": 300,
             "depth": 300,
             "testColourHex": "d6ab20"
         },
@@ -217,7 +217,7 @@
             "type": "Deuterium",
             "surfaceArea": 200,
             "startDepth": 200,
-            "depth": 400,
+            "depth": 300,
             "testColourHex": "d812ea"
         },
         {
@@ -225,7 +225,7 @@
             "type": "DenseDeuterium",
             "surfaceArea": 200,
             "startDepth": 50,
-            "depth": 600,
+            "depth": 400,
             "testColourHex": "d812ea"
         }
     ],
