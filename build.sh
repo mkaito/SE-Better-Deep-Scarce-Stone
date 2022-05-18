@@ -9,7 +9,7 @@ GAMEDATA='/mnt/d/SteamLibrary/steamapps/common/SpaceEngineers/Content/Data'
 # GAMEDATA="$HOME/.steam/steam/steamapps/common/SpaceEngineers/Content/Data"
 
 # Generate ore maps
-# NOTE: Does not run on Linux
+# NOTE: Does not run on Linux. Java much portable wow.
 # pushd Procedural_Ore_Generator
 #   java.exe -Xms2G -Xmx16G -jar Procedural_Ore_Generator.jar
 # popd
@@ -34,6 +34,6 @@ cp Procedural_Ore_Generator/*.sbc ./Upload/Data
 # Manual overrides
 echo '** Merging manual overrides'
 rsync -rtL ./Assets/ ./Upload/
-rsync -rtL ./Data/ ./Upload/
+rsync -rtL ./Data/ ./Upload/Data/
 
 echo '** Done'

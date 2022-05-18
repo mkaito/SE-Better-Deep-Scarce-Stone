@@ -224,7 +224,7 @@
             "id": 241,
             "type": "DenseDeuterium",
             "surfaceArea": 200,
-            "startDepth": 50,
+            "startDepth": 200,
             "depth": 400,
             "testColourHex": "d812ea"
         }
