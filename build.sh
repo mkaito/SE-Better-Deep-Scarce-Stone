@@ -10,9 +10,9 @@ GAMEDATA='/mnt/d/SteamLibrary/steamapps/common/SpaceEngineers/Content/Data'
 
 # Generate ore maps
 # NOTE: Does not run on Linux. Java much portable wow.
-# pushd Procedural_Ore_Generator
-#   java.exe -Xms2G -Xmx16G -jar Procedural_Ore_Generator.jar
-# popd
+pushd Procedural_Ore_Generator
+ java.exe -Xms2G -Xmx16G -jar Procedural_Ore_Generator.jar
+popd
 
 # Reset output folder
 rm -rf ./Upload
@@ -23,6 +23,7 @@ echo '** Copying vanilla planet data files'
 rsync -rt \
       --exclude='*Tutorial/' \
       --exclude='SystemTestMap/' \
+      --exclude='Extra/' \
       "$GAMEDATA/PlanetDataFiles" ./Upload/Data/
 
 # Ore Generator Output
