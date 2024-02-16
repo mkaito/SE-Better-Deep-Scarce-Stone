@@ -3,7 +3,7 @@ set -euo pipefail
 IFS=$'\n\t'
 
 # WSL2 Paths
-GAMEDATA='/mnt/d/SteamLibrary/steamapps/common/SpaceEngineers/Content/Data'
+GAMEDATA='/mnt/c/Program Files (x86)/Steam/steamapps/common/SpaceEngineers/Content/Data'
 
 # Linux Paths
 # GAMEDATA="$HOME/.steam/steam/steamapps/common/SpaceEngineers/Content/Data"

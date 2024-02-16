@@ -1,9 +1,9 @@
 {
-    "planetDataPath": "D:\\SteamLibrary\\steamapps\\common\\SpaceEngineers\\Content\\Data\\PlanetDataFiles",
+    "planetDataPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\SpaceEngineers\\Content\\Data\\PlanetDataFiles",
     "planetGeneratorDefinitionsPathArray": [
-        "D:\\SteamLibrary\\steamapps\\common\\SpaceEngineers\\Content\\Data\\PlanetGeneratorDefinitions.sbc",
-        "D:\\SteamLibrary\\steamapps\\common\\SpaceEngineers\\Content\\Data\\Pertam.sbc",
-        "D:\\SteamLibrary\\steamapps\\common\\SpaceEngineers\\Content\\Data\\Triton.sbc"
+        "C:\\Program Files (x86)\\Steam\\steamapps\\common\\SpaceEngineers\\Content\\Data\\PlanetGeneratorDefinitions.sbc",
+        "C:\\Program Files (x86)\\Steam\\steamapps\\common\\SpaceEngineers\\Content\\Data\\Pertam.sbc",
+        "C:\\Program Files (x86)\\Steam\\steamapps\\common\\SpaceEngineers\\Content\\Data\\Triton.sbc"
     ],
     "makeColouredMaps": true,
     "surfaceHintMaps": true,
