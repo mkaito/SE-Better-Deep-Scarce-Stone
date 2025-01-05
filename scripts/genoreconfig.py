@@ -1,8 +1,10 @@
 #!/usr/bin/env python
 
 import json
+from enum import IntEnum
+from typing import TypedDict
 
-CONFIG = {
+BASE_CONFIG = {
     "planetDataPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\SpaceEngineers\\Content\\Data\\PlanetDataFiles",  # noqa: E501
     "planetGeneratorDefinitionsPathArray": [
         "C:\\Program Files (x86)\\Steam\\steamapps\\common\\SpaceEngineers\\Content\\Data\\PlanetGeneratorDefinitions.sbc",  # noqa: E501
@@ -16,21 +18,43 @@ CONFIG = {
 }
 
 
-# {
-#     "id": 1,
-#     "type": "Iron_02",
-#     "surfaceArea": 270,
-#     "startDepth": 450,
-#     "depth": 270,
-#     "testColourHex": "fc0707"
-# },
-
-ORES = {"Iron_02": {}}
-
-PLANETS = {}
+class OreTier(IntEnum):
+    STARTER = 1
+    MIDGAME = 2
+    LATEGAME = 3
+    ADVANCED = 4
 
 
-def genPlanetConfig(name: str, ores: str): ...
+class Ingot(TypedDict):
+    name: str
+    tier: OreTier
 
 
-config = json.dumps(CONFIG)
+class Ore(TypedDict):
+    name: str
+    contents: list[Ingot]
+
+
+class OreGroup(TypedDict):
+    name: str
+    ores: list[Ore]
+
+
+def genPlanetConfig(name: str, seed: int, ore_config: str): ...
+
+
+def getOreTemplate(name: str, tier: int, shallow: bool = False):
+    return {
+        "id": 241,
+        "type": "DenseDeuterium",
+        "surfaceArea": 657,
+        "startDepth": 645,
+        "depth": 894,
+        "testColourHex": "d812ea",
+    }
+
+
+def renderTemplates(): ...
+
+
+config = json.dumps(BASE_CONFIG)
