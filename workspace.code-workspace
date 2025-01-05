@@ -24,5 +24,7 @@
 			"name": "Mod: Life'Tech Powers"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"powershell.cwd": "UDSEBetterDeepScarceStone"
+	}
 }
