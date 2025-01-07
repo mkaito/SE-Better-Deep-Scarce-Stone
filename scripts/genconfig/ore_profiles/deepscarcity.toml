@@ -1,263 +1,253 @@
 [Global]
-seed = 9
-planetDataPath = "C:\\Program Files (x86)\\Steam\\steamapps\\common\\SpaceEngineers\\Content\\Data\\PlanetDataFiles"
-planetGeneratorDefinitionsPathArray = [
-  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\SpaceEngineers\\Content\\Data\\PlanetGeneratorDefinitions.sbc",
-  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\SpaceEngineers\\Content\\Data\\Pertam.sbc",
-  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\SpaceEngineers\\Content\\Data\\Triton.sbc",
-]
+use_vanilla_planets = true
+
+[Global.Planet]
+# Global seed is inherited by planets that don't define their own
+seed = 203484618
+# Default deposit weight
+p = 10
+
+[Static]
 makeColouredMaps = true
 surfaceHintMaps = true
 shape = 1
 density = 0.7
 
 [[Planets]]
-name = "EarthLike"
-resources = [
-  { name = "Iron", shallow = true, deep = true },
-  { name = "Nickel", shallow = true, deep = true },
-  { name = "Silicon", shallow = true, deep = true },
-  { name = "Cobalt", shallow = true, deep = true },
-  { name = "Magnesium", shallow = false, deep = true },
+subtype = 'EarthLike'
+# limit ores to only common materials
+class_whitelist = ['CM']
+# Include these deposits with their default values
+resources = ['Iron', 'Nickel', 'Silicon', 'Cobalt']
+# Additional deposits with multipliers
+variants = [
+  # Shallow starter ores
+  { name = 'Iron', start = 0.1, depth = 0.1, size = 0.2 },
+  { name = 'Nickel', start = 0.1, depth = 0.1, size = 0.1 },
+  { name = 'Silicon', start = 0.1, depth = 0.1, size = 0.2 },
+  { name = 'Cobalt', start = 0.1, depth = 0.1, size = 0.3 },
+  # Deep ores as an alternative to asteroid/moon prospecting
+  { name = 'Gold', start = 1.5, depth = 0.5, size = 0.2, p = 1 },
+  { name = 'Silver', start = 1.5, depth = 0.5, size = 0.2, p = 1 },
+  { name = 'Magnesium', start = 1.5, depth = 0.5, size = 0.2, p = 2 },
 ]
+# Change existing deposits
+overrides = [{ name = 'Dense Iron', p = 0 }]
+
+[[Planets]]
 
 [[Ores]]
-name = "Dense Iron"
-subtype = "[CM] Dense Iron"
-ingots = ["Iron"]
-deep_start = 320
-deep_size = 200
+name = 'Dense Iron'
+subtype = '[CM] Dense Iron'
+ingots = ['Iron']
+class = 'CM'
+start = 320
+depth = 200
 
 [[Ores]]
-name = "Heazlewoodite"
-subtype = "[CM] Heazlewoodite (Ni)"
-ingots = ["Nickel"]
-shallow_start = 35
-shallow_size = 50
-deep_start = 320
-deep_size = 200
+name = 'Heazlewoodite'
+subtype = '[CM] Heazlewoodite (Ni)'
+ingots = ['Nickel']
+class = 'CM'
+start = 320
+depth = 200
 
 [[Ores]]
-name = "Cattierite"
-subtype = "[CM] Cattierite (Co)"
-ingots = ["Cobalt"]
-shallow_start = 35
-shallow_size = 50
-deep_start = 320
-deep_size = 200
+name = 'Catclassite'
+subtype = '[CM] Catclassite (Co)'
+ingots = ['Cobalt']
+class = 'CM'
+start = 320
+depth = 200
 
 [[Ores]]
-name = "Cattierite"
-subtype = "[CM] Cattierite (Co)"
-ingots = ["Cobalt"]
-shallow_start = 35
-shallow_size = 50
-deep_start = 320
-deep_size = 200
+name = 'Catclassite'
+subtype = '[CM] Catclassite (Co)'
+ingots = ['Cobalt']
+class = 'CM'
+start = 320
+depth = 200
 
 [[Ores]]
-name = "Pyrite"
-subtype = "[CM] Pyrite (Fe, Au)"
-ingots = ["Iron", "Gold"]
-shallow_start = 35
-shallow_size = 50
-deep_start = 320
-deep_size = 200
+name = 'Pyrite'
+subtype = '[CM] Pyrite (Fe, Au)'
+ingots = ['Iron', 'Gold']
+class = 'CM'
+start = 320
+depth = 200
 
 [[Ores]]
-name = "Taenite"
-subtype = "[CM] Taenite (Fe, Ni)"
-ingots = ["Iron", "Nickel"]
-shallow_start = 35
-shallow_size = 50
-deep_start = 320
-deep_size = 200
+name = 'Taenite'
+subtype = '[CM] Taenite (Fe, Ni)'
+ingots = ['Iron', 'Nickel']
+class = 'CM'
+start = 320
+depth = 200
 
 [[Ores]]
-name = "Cohenite"
-subtype = "[CM] Cohenite (Ni, Co)"
-ingots = ["Nickel", "Nickel"]
-shallow_start = 35
-shallow_size = 50
-deep_start = 320
-deep_size = 200
+name = 'Cohenite'
+subtype = '[CM] Cohenite (Ni, Co)'
+ingots = ['Nickel', 'Nickel']
+class = 'CM'
+start = 320
+depth = 200
 
 [[Ores]]
-name = "Kamacite"
-subtype = "[CM] Kamacite (Fe, Ni, Co)"
-ingots = ["Iron", "Nickel", "Nickel"]
-shallow_start = 35
-shallow_size = 50
-deep_start = 320
-deep_size = 200
+name = 'Kamacite'
+subtype = '[CM] Kamacite (Fe, Ni, Co)'
+ingots = ['Iron', 'Nickel', 'Nickel']
+class = 'CM'
+start = 320
+depth = 200
 
 [[Ores]]
-name = "Glaucodot"
-subtype = "[CM] Glaucodot (Fe, Co)"
-ingots = ["Iron", "Nickel"]
-shallow_start = 35
-shallow_size = 50
-deep_start = 320
-deep_size = 200
+name = 'Glaucodot'
+subtype = '[CM] Glaucodot (Fe, Co)'
+ingots = ['Iron', 'Nickel']
+class = 'CM'
+start = 320
+depth = 200
 
 [[Ores]]
-name = "Electrum"
-subtype = "[PM] Electrum (Au, Ag)"
-ingots = ["Gold", "Silver"]
-shallow_start = 35
-shallow_size = 50
-deep_start = 320
-deep_size = 200
+name = 'Electrum'
+subtype = '[PM] Electrum (Au, Ag)'
+ingots = ['Gold', 'Silver']
+class = 'PM'
+start = 320
+depth = 200
 
 [[Ores]]
-name = "Porphyry"
-subtype = "[PM] Porphyry (Au)"
-ingots = ["Gold"]
-shallow_start = 35
-shallow_size = 50
-deep_start = 320
-deep_size = 200
+name = 'Porphyry'
+subtype = '[PM] Porphyry (Au)'
+ingots = ['Gold']
+class = 'PM'
+start = 320
+depth = 200
 
 [[Ores]]
-name = "Sperrylite"
-subtype = "[PM] Sperrylite (Pt)"
-ingots = ["Platinum"]
-shallow_start = 35
-shallow_size = 50
-deep_start = 320
-deep_size = 200
+name = 'Sperrylite'
+subtype = '[PM] Sperrylite (Pt)'
+ingots = ['Platinum']
+class = 'PM'
+start = 320
+depth = 200
 
 [[Ores]]
-name = "Niggliite"
-subtype = "[PM] Niggliite (Pt)"
-ingots = ["Platinum"]
-shallow_start = 35
-shallow_size = 50
-deep_start = 320
-deep_size = 200
+name = 'Niggliite'
+subtype = '[PM] Niggliite (Pt)'
+ingots = ['Platinum']
+class = 'PM'
+start = 320
+depth = 200
 
 [[Ores]]
-name = "Galena"
-subtype = "[PM] Galena (Ag)"
-ingots = ["Silver"]
-shallow_start = 35
-shallow_size = 50
-deep_start = 320
-deep_size = 200
+name = 'Galena'
+subtype = '[PM] Galena (Ag)'
+ingots = ['Silver']
+class = 'PM'
+start = 320
+depth = 200
 
 [[Ores]]
-name = "Chlorargyrite"
-subtype = "[PM] Chlorargyrite (Ag)"
-ingots = ["Silver"]
-shallow_start = 35
-shallow_size = 50
-deep_start = 320
-deep_size = 200
+name = 'Chlorargyrite'
+subtype = '[PM] Chlorargyrite (Ag)'
+ingots = ['Silver']
+class = 'PM'
+start = 320
+depth = 200
 
 [[Ores]]
-name = "Cooperite"
-subtype = "[PM] Cooperite (Ni, Ag)"
-ingots = ["Nickel", "Silver"]
-shallow_start = 35
-shallow_size = 50
-deep_start = 320
-deep_size = 200
+name = 'Cooperite'
+subtype = '[PM] Cooperite (Ni, Ag)'
+ingots = ['Nickel', 'Silver']
+class = 'PM'
+start = 320
+depth = 200
 
 [[Ores]]
-name = "Petzite"
-subtype = "[PM] Petzite (Ag, Au)"
-ingots = ["Silver", "Gold"]
-shallow_start = 35
-shallow_size = 50
-deep_start = 320
-deep_size = 200
+name = 'Petzite'
+subtype = '[PM] Petzite (Ag, Au)'
+ingots = ['Silver', 'Gold']
+class = 'PM'
+start = 320
+depth = 200
 
 [[Ores]]
-name = "Hapkeite"
-subtype = "[S] Hapkeite (Fe, Si)"
-ingots = ["Iron", "Silicon"]
-shallow_start = 35
-shallow_size = 50
-deep_start = 320
-deep_size = 200
+name = 'Hapkeite'
+subtype = '[S] Hapkeite (Fe, Si)'
+ingots = ['Iron', 'Silicon']
+class = 'PM'
+start = 320
+depth = 200
 
 [[Ores]]
-name = "Dolomite"
-subtype = "[S] Dolomite (Mg)"
-ingots = ["Magnesium"]
-shallow_start = 35
-shallow_size = 50
-deep_start = 320
-deep_size = 200
+name = 'Dolomite'
+subtype = '[S] Dolomite (Mg)'
+ingots = ['Magnesium']
+class = 'S'
+start = 320
+depth = 200
 
 [[Ores]]
-name = "Sinoite"
-subtype = "[S] Sinoite (Si)"
-ingots = ["Silicon"]
-shallow_start = 35
-shallow_size = 50
-deep_start = 320
-deep_size = 200
+name = 'Sinoite'
+subtype = '[S] Sinoite (Si)'
+ingots = ['Silicon']
+class = 'S'
+start = 320
+depth = 200
 
 [[Ores]]
-name = "Olivine"
-subtype = "[S] Olivine (Si, Mg)"
-ingots = ["Silicon", "Magnesium"]
-shallow_start = 35
-shallow_size = 50
-deep_start = 320
-deep_size = 200
+name = 'Olivine'
+subtype = '[S] Olivine (Si, Mg)'
+ingots = ['Silicon', 'Magnesium']
+class = 'S'
+start = 320
+depth = 200
 
 [[Ores]]
-name = "Quartz"
-subtype = "[S] Quartz (Si)"
-ingots = ["Silicon"]
-shallow_start = 35
-shallow_size = 50
-deep_start = 320
-deep_size = 200
+name = 'Quartz'
+subtype = '[S] Quartz (Si)'
+ingots = ['Silicon']
+class = 'S'
+start = 320
+depth = 200
 
 [[Ores]]
-name = "Akimotoite"
-subtype = "[S] Akimotoite (Si, Mg)"
-ingots = ["Silicon", "Magnesium"]
-shallow_start = 35
-shallow_size = 50
-deep_start = 320
-deep_size = 200
+name = 'Akimotoite'
+subtype = '[S] Akimotoite (Si, Mg)'
+ingots = ['Silicon', 'Magnesium']
+class = 'S'
+start = 320
+depth = 200
 
 [[Ores]]
-name = "Wadsleyite"
-subtype = "[S] Wadsleyite (Si, Mg)"
-ingots = ["Silicon", "Magnesium"]
-shallow_start = 35
-shallow_size = 50
-deep_start = 320
-deep_size = 200
+name = 'Wadsleyite'
+subtype = '[S] Wadsleyite (Si, Mg)'
+ingots = ['Silicon', 'Magnesium']
+class = 'S'
+start = 320
+depth = 200
 
 [[Ores]]
-name = "Carnotite"
-subtype = "[EI] Carnotite (U)"
-ingots = ["Uranium"]
-shallow_start = 35
-shallow_size = 50
-deep_start = 320
-deep_size = 200
+name = 'Carnotite'
+subtype = '[EI] Carnotite (U)'
+ingots = ['Uranium']
+class = 'EI'
+start = 320
+depth = 200
 
 [[Ores]]
-name = "Autunite"
-subtype = "[EI] Autunite (U)"
-ingots = ["Uranium"]
-shallow_start = 35
-shallow_size = 50
-deep_start = 320
-deep_size = 200
+name = 'Autunite'
+subtype = '[EI] Autunite (U)'
+ingots = ['Uranium']
+class = 'EI'
+start = 320
+depth = 200
 
 [[Ores]]
-name = "Uraniaurite"
-subtype = "[EI] Uraniaurite (U, Au)"
-ingots = ["Uranium", "Gold"]
-shallow_start = 35
-shallow_size = 50
-deep_start = 320
-deep_size = 200
+name = 'Uraniaurite'
+subtype = '[EI] Uraniaurite (U, Au)'
+ingots = ['Uranium', 'Gold']
+class = 'EI'
+start = 320
+depth = 200

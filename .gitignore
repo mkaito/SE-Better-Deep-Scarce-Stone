@@ -13,3 +13,6 @@
 # Vim
 *.swp
 /readme.bb
+
+# Python
+.venv/
