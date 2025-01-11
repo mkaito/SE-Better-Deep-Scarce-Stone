@@ -1,0 +1,36 @@
+[Global]
+use_vanilla_planets = true
+ores = ["betterstone"]
+
+[Global.Defaults]
+# Applied at the planet level
+seed = 203484618
+# Applied at the planet.ore level
+p = 10
+
+[Static]
+makeColouredMaps = true
+surfaceHintMaps = true
+shape = 1
+density = 0.7
+
+[[Planets]]
+subtype = 'EarthLike'
+# limit ores to only common materials
+class_whitelist = ['CM']
+# Include these deposits with their default values
+resources = ['Iron', 'Nickel', 'Silicon', 'Cobalt']
+# Additional deposits with multipliers
+variants = [
+  # Shallow starter ores
+  { name = 'Iron', start = 0.1, depth = 0.1, size = 0.2 },
+  { name = 'Nickel', start = 0.1, depth = 0.1, size = 0.1 },
+  { name = 'Silicon', start = 0.1, depth = 0.1, size = 0.2 },
+  { name = 'Cobalt', start = 0.1, depth = 0.1, size = 0.3 },
+  # Deep ores as an alternative to asteroid/moon prospecting
+  { name = 'Gold', start = 1.5, depth = 0.5, size = 0.2, p = 1 },
+  { name = 'Silver', start = 1.5, depth = 0.5, size = 0.2, p = 1 },
+  { name = 'Magnesium', start = 1.5, depth = 0.5, size = 0.2, p = 2 },
+]
+# Change existing deposits
+overrides = [{ name = 'Dense Iron', p = 0 }]
