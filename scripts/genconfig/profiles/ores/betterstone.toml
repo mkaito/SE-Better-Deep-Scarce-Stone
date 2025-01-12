@@ -1,161 +1,134 @@
 [[Ores]]
 name = 'Dense Iron'
 subtype = '[CM] Dense Iron'
-ingots = ['Iron']
-class = 'CM'
+resources = ['Iron']
 
 [[Ores]]
 name = 'Heazlewoodite'
 subtype = '[CM] Heazlewoodite (Ni)'
-ingots = ['Nickel']
-class = 'CM'
+resources = ['Nickel']
 
 [[Ores]]
-name = 'Catclassite'
-subtype = '[CM] Catclassite (Co)'
-ingots = ['Cobalt']
-class = 'CM'
+name = 'Cattierite'
+subtype = '[CM] Cattierite (Co)'
+resources = ['Cobalt']
 
 [[Ores]]
-name = 'Catclassite'
-subtype = '[CM] Catclassite (Co)'
-ingots = ['Cobalt']
-class = 'CM'
+name = 'Cattierite'
+subtype = '[CM] Cattierite (Co)'
+resources = ['Cobalt']
 
 [[Ores]]
 name = 'Pyrite'
 subtype = '[CM] Pyrite (Fe, Au)'
-ingots = ['Iron', 'Gold']
-class = 'CM'
+resources = ['Iron', 'Gold']
 
 [[Ores]]
 name = 'Taenite'
 subtype = '[CM] Taenite (Fe, Ni)'
-ingots = ['Iron', 'Nickel']
-class = 'CM'
+resources = ['Iron', 'Nickel']
 
 [[Ores]]
 name = 'Cohenite'
 subtype = '[CM] Cohenite (Ni, Co)'
-ingots = ['Nickel', 'Nickel']
-class = 'CM'
+resources = ['Nickel', 'Nickel']
 
 [[Ores]]
 name = 'Kamacite'
 subtype = '[CM] Kamacite (Fe, Ni, Co)'
-ingots = ['Iron', 'Nickel', 'Nickel']
-class = 'CM'
+resources = ['Iron', 'Nickel', 'Nickel']
 
 [[Ores]]
 name = 'Glaucodot'
 subtype = '[CM] Glaucodot (Fe, Co)'
-ingots = ['Iron', 'Nickel']
-class = 'CM'
+resources = ['Iron', 'Nickel']
 
 [[Ores]]
 name = 'Electrum'
 subtype = '[PM] Electrum (Au, Ag)'
-ingots = ['Gold', 'Silver']
-class = 'PM'
+resources = ['Gold', 'Silver']
 
 [[Ores]]
 name = 'Porphyry'
 subtype = '[PM] Porphyry (Au)'
-ingots = ['Gold']
-class = 'PM'
+resources = ['Gold']
 
 [[Ores]]
 name = 'Sperrylite'
 subtype = '[PM] Sperrylite (Pt)'
-ingots = ['Platinum']
-class = 'PM'
+resources = ['Platinum']
 
 [[Ores]]
 name = 'Niggliite'
 subtype = '[PM] Niggliite (Pt)'
-ingots = ['Platinum']
-class = 'PM'
+resources = ['Platinum']
 
 [[Ores]]
 name = 'Galena'
 subtype = '[PM] Galena (Ag)'
-ingots = ['Silver']
-class = 'PM'
+resources = ['Silver']
 
 [[Ores]]
 name = 'Chlorargyrite'
 subtype = '[PM] Chlorargyrite (Ag)'
-ingots = ['Silver']
-class = 'PM'
+resources = ['Silver']
 
 [[Ores]]
 name = 'Cooperite'
 subtype = '[PM] Cooperite (Ni, Ag)'
-ingots = ['Nickel', 'Silver']
-class = 'PM'
+resources = ['Nickel', 'Silver']
 
 [[Ores]]
 name = 'Petzite'
 subtype = '[PM] Petzite (Ag, Au)'
-ingots = ['Silver', 'Gold']
-class = 'PM'
+resources = ['Silver', 'Gold']
 
 [[Ores]]
 name = 'Hapkeite'
 subtype = '[S] Hapkeite (Fe, Si)'
-ingots = ['Iron', 'Silicon']
-class = 'PM'
+resources = ['Iron', 'Silicon']
 
 [[Ores]]
 name = 'Dolomite'
 subtype = '[S] Dolomite (Mg)'
-ingots = ['Magnesium']
-class = 'S'
+resources = ['Magnesium']
 
 [[Ores]]
 name = 'Sinoite'
 subtype = '[S] Sinoite (Si)'
-ingots = ['Silicon']
-class = 'S'
+resources = ['Silicon']
 
 [[Ores]]
 name = 'Olivine'
 subtype = '[S] Olivine (Si, Mg)'
-ingots = ['Silicon', 'Magnesium']
-class = 'S'
+resources = ['Silicon', 'Magnesium']
 
 [[Ores]]
 name = 'Quartz'
 subtype = '[S] Quartz (Si)'
-ingots = ['Silicon']
-class = 'S'
+resources = ['Silicon']
 
 [[Ores]]
 name = 'Akimotoite'
 subtype = '[S] Akimotoite (Si, Mg)'
-ingots = ['Silicon', 'Magnesium']
-class = 'S'
+resources = ['Silicon', 'Magnesium']
 
 [[Ores]]
 name = 'Wadsleyite'
 subtype = '[S] Wadsleyite (Si, Mg)'
-ingots = ['Silicon', 'Magnesium']
-class = 'S'
+resources = ['Silicon', 'Magnesium']
 
 [[Ores]]
 name = 'Carnotite'
 subtype = '[EI] Carnotite (U)'
-ingots = ['Uranium']
-class = 'EI'
+resources = ['Uranium']
 
 [[Ores]]
 name = 'Autunite'
 subtype = '[EI] Autunite (U)'
-ingots = ['Uranium']
-class = 'EI'
+resources = ['Uranium']
 
 [[Ores]]
 name = 'Uraniaurite'
 subtype = '[EI] Uraniaurite (U, Au)'
-ingots = ['Uranium', 'Gold']
-class = 'EI'
+resources = ['Uranium', 'Gold']

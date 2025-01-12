@@ -2,12 +2,17 @@
 
 source "https://rubygems.org"
 
+# Testing and tooling
 gem "rake", "~> 13.0"
+gem "minitest", "~> 5.25"
+gem "guard", "~> 2.19", group: :development
+gem "guard-minitest", "~> 2.4", group: :development
 
-gem "minitest", "~> 5.16"
-
-gem "standard", "~> 1.3"
-
+# Linting and editor support
+gem "standard", "~> 1.31"
 gem "ruby-lsp", "~> 0.23.5"
 
-gem "toml", "~> 0.3.0"
+# App dependencies
+gem "toml-rb", "~> 3.0.1"
+
+gem "reline", "~> 0.6.0", :group => :development

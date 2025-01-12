@@ -1,6 +1,9 @@
 require_relative "genconfig/version"
+require_relative "genconfig/profile"
 
 module Genconfig
   class Error < StandardError; end
-  # Your code goes here...
+
+  class Generator
+  end
 end
