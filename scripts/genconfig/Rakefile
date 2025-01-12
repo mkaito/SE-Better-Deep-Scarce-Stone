@@ -1,14 +1,22 @@
 # frozen_string_literal: true
 
 require "minitest/test_task"
-
-Minitest::TestTask.create(:spec) do |t|
-  t.libs << "spec"
-  t.libs << "lib"
-  t.warning = false
-  t.test_globs = ["spec/**/*_spec.rb"]
-end
-
 require "standard/rake"
+
+task spec: %i[spec:unit spec:integration]
+namespace :spec do
+  Minitest::TestTask.create(:unit) do |t|
+    t.libs << "spec"
+    t.libs << "lib"
+    t.warning = false
+    t.test_globs = ["spec/unit/**/*_spec.rb"]
+  end
+  Minitest::TestTask.create(:integration) do |t|
+    t.libs << "spec"
+    t.libs << "lib"
+    t.warning = false
+    t.test_globs = ["spec/integration/**/*_spec.rb"]
+  end
+end
 
 task default: %i[spec standard]
