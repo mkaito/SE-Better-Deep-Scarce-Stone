@@ -1,25 +1,20 @@
 # Better Deep Scarce Stone
 
-This mod began life as an effort to update Better [Deep Scarce
-Ores](https://steamcommunity.com/sharedfiles/filedetails/?id=2281727435),
-whose author appears to be on a bit of a break. I took his ore values
-and just merged EarthLike and Moon into Pertam, called it a day. After
-playing with the resulting mod, I began to feel the need to adjust the
-numbers a bit, to better suit my usual scenario. The result is this mod.
-I hope you'll find it enjoyable.
+A scarce-and-deep ore rebalance for Space Engineers. Started as an
+update to Better [Deep Scarce
+Ores](https://steamcommunity.com/sharedfiles/filedetails/?id=2281727435)
+(merging EarthLike and Moon into Pertam), then evolved into its own
+rebalance once I started playing with the numbers in earnest.
 
 Supports Deuterium (2H) ore from
 [Life'Tech-Powers](https://steamcommunity.com/sharedfiles/filedetails/?id=2558149005).
-If you don't use the mod, that's fine. Any Deuterium patches will just
-turn back into stone.
+Without that mod installed, any Deuterium patches harmlessly revert to
+stone.
 
-I began the project with ore depths up to 1200m, but very quickly found
-myself wrestling with the limitations of SE's subpar voxel scanning
-code. The result was that, no matter the range of your modded ore
-detector, you would only find the deeper ores by accident, never on
-purpose. I decided to make the ores much more shallow, and hope Keen
-will eventually get around to optimizing this much neglected bit of
-their game.
+Original target was ore depths up to 1200m, but SE's voxel scanning is
+inefficient enough that deep ores became impossible to find on purpose,
+only by accident, regardless of detector range. Depths were pulled
+shallower as a workaround until Keen optimizes voxel scanning.
 
 This project is available on
 [GitHub](https://github.com/mkaito/SE-Better-Deep-Scarce-Stone).
@@ -55,15 +50,13 @@ Concrete](https://steamcommunity.com/sharedfiles/filedetails/?id=2298956701).
 
 ## Installation
 
-Since the dependency system in SE is kinda broken, this mod does not
-explicitly depend on [Better
+Requires [Better
 Stone](https://steamcommunity.com/sharedfiles/filedetails/?id=406244471).
-You do, however, need both installed, added to your world, AND THIS MOD
-ABOVE Better Stone (below if DS). Please make sure you get that right.
-There's nothing I can do to make any of this automatic, I'm sorry.
-
-In fact, adding it as a dependency on the workshop, breaks it in game.
-Thanks, Keen.
+Both mods must be added to your world, with **this mod above Better
+Stone** in the mod list (or below it, if you use Dedicated Server load
+order). SE's dependency system is unreliable enough that declaring
+Better Stone as a workshop dependency actually breaks this mod in game,
+so it has to be configured manually.
 
 ## Conflicts
 
@@ -166,3 +159,44 @@ Here are some notes and recommendations for you:
 - Kuvat for his work on the
   [Life'Tech](https://steamcommunity.com/sharedfiles/filedetails/?id=2558149005)
   mods.
+
+## Development
+
+Tasks run via [mise](https://mise.jdx.dev):
+
+```sh
+mise run oregen     # regenerate ore maps with Procedural Ore Generator
+mise run build      # stage vanilla planet data + ore maps + overrides into ./Upload/
+mise run publish    # build, then push to Steam Workshop via steamcmd
+```
+
+`publish` depends on `build`, but `build` does **not** depend on
+`oregen` — ore-map regeneration is a deliberate step. Re-run `oregen`
+only when ore template parameters in `pog-config.json.template` change.
+
+### Environment
+
+Set in `mise.toml`, override per machine in `mise.local.toml`:
+
+- `SE_DATA` — path to vanilla SE `Content/Data/`. Required by `oregen`
+  (POG reads vanilla planet data) and `build` (rsyncs vanilla
+  `PlanetDataFiles` into `Upload/`).
+- `STEAMCMD` — path to `steamcmd.sh`. Required by `publish`.
+- `STEAMPASSWORD` — must be exported in your shell before `publish`.
+  Not stored anywhere in repo or mise config.
+
+### Project layout
+
+- `Data/`, `Assets/` — hand-authored mod content (SBC overrides,
+  modinfo, preview).
+- `pog-config.json.template` — Procedural Ore Generator config with
+  `${SE_DATA}` placeholders. Rendered into `vendor/POG/config.json` by
+  the `oregen` task.
+- `vendor/POG/` — bundled
+  [Procedural Ore Generator](https://github.com/asrbic/Procedural_Ore_Generator)
+  jar + libs. Generated `PlanetDataFiles/` and `.sbc` outputs land here
+  (gitignored) and are picked up by `build`.
+- `vendor/2bbcode/` — git submodule. Pandoc filter that converts this
+  readme to Steam BBCode for the workshop description. Pulled by
+  `publish`. Everything from `## Development` onward is stripped from
+  the published description.
