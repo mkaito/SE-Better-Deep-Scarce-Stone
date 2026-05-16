@@ -31,6 +31,6 @@ cp vendor/POG/*.sbc ./Upload/Data/
 
 echo '** Merging manual overrides'
 rsync -rtL ./Assets/ ./Upload/
-rsync -rtL ./Data/ ./Upload/
+rsync -rtL ./Data/ ./Upload/Data/
 
 echo "Staged to ./Upload"
