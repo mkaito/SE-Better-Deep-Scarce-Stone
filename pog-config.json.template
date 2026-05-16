@@ -1,7 +1,7 @@
 {
-  "planetDataPath": "/mnt/steamone/SteamLibrary/steamapps/common/SpaceEngineers/Content/Data/PlanetDataFiles",
+  "planetDataPath": "${SE_DATA}/PlanetDataFiles",
   "planetGeneratorDefinitionsPathArray": [
-    "/mnt/steamone/SteamLibrary/steamapps/common/SpaceEngineers/Content/Data/PlanetGeneratorDefinitions.sbc"
+    "${SE_DATA}/PlanetGeneratorDefinitions.sbc"
   ],
   "makeColouredMaps": true,
   "surfaceHintMaps": true,
