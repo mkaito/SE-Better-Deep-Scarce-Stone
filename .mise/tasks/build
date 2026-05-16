@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+#MISE description="Stage mod files into Upload/ for Steam Workshop publishing."
+set -euo pipefail
+IFS=$'\n\t'
+
+cd "$MISE_PROJECT_ROOT"
+
+: "${SE_DATA:?SE_DATA must point to SE Content/Data (set in mise.toml).}"
+[[ -d "$SE_DATA/PlanetDataFiles" ]] || {
+    echo "SE_DATA=$SE_DATA: PlanetDataFiles directory not found." >&2
+    exit 1
+}
+
+[[ -d vendor/POG/PlanetDataFiles ]] || {
+    echo "vendor/POG/PlanetDataFiles missing. Run 'mise run oregen' first." >&2
+    exit 1
+}
+
+rm -rf ./Upload
+mkdir -p ./Upload/Data
+
+echo '** Copying vanilla planet data files'
+rsync -rt \
+    --exclude='*Tutorial/' \
+    --exclude='SystemTestMap/' \
+    "$SE_DATA/PlanetDataFiles" ./Upload/Data/
+
+echo '** Merging ore generator output'
+rsync -rt --exclude='*_coloured.png' vendor/POG/PlanetDataFiles ./Upload/Data/
+cp vendor/POG/*.sbc ./Upload/Data/
+
+echo '** Merging manual overrides'
+rsync -rtL ./Assets/ ./Upload/
+rsync -rtL ./Data/ ./Upload/
+
+echo "Staged to ./Upload"

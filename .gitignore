@@ -1,15 +1,18 @@
-# POG Output
-/Procedural_Ore_Generator/PlanetDataFiles/
-/Procedural_Ore_Generator/PlanetGeneratorDefinitions.sbc
-/Procedural_Ore_Generator/Triton.sbc
-/Procedural_Ore_Generator/Pertam.sbc
-/Procedural_Ore_Generator/generator.log
+# POG output
+/vendor/POG/config.json
+/vendor/POG/PlanetDataFiles/
+/vendor/POG/PlanetGeneratorDefinitions.sbc
+/vendor/POG/Triton.sbc
+/vendor/POG/Pertam.sbc
+/vendor/POG/generator.log
 
 # Assembled output
 /Upload/
 /mod.vdf
 /description.bb
 
+# mise
+/mise.local.toml
+
 # Vim
 *.swp
-/readme.bb

@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+#MISE description="Generate ore maps with Procedural Ore Generator. Outputs to vendor/POG/PlanetDataFiles/."
+set -euo pipefail
+IFS=$'\n\t'
+
+cd "$MISE_PROJECT_ROOT"
+
+: "${SE_DATA:?SE_DATA must point to SE Content/Data (set in mise.toml).}"
+[[ -d "$SE_DATA/PlanetDataFiles" ]] || {
+    echo "SE_DATA=$SE_DATA: PlanetDataFiles directory not found." >&2
+    exit 1
+}
+[[ -f "$SE_DATA/PlanetGeneratorDefinitions.sbc" ]] || {
+    echo "SE_DATA=$SE_DATA: PlanetGeneratorDefinitions.sbc not found." >&2
+    exit 1
+}
+
+# POG reads ./config.json and ./lib/* relative to cwd. Render template into
+# vendor/POG/ and invoke from there.
+envsubst <pog-config.json.template >vendor/POG/config.json
+
+cd vendor/POG
+exec java -Xms512m -Xmx4g -cp 'Procedural_Ore_Generator.jar:lib/*' core.Main

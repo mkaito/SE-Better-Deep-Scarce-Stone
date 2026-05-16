@@ -1,0 +1,16 @@
+[tools]
+pandoc = "latest"
+# java and steamcmd are managed via portage on Gentoo. Do not list here.
+
+[env]
+# Vanilla SE install Data directory. Used by oregen (POG reads vanilla planet
+# data) and build (rsyncs vanilla PlanetDataFiles into Upload/). Override per
+# machine in mise.local.toml.
+SE_DATA = "/mnt/steamone/SteamLibrary/steamapps/common/SpaceEngineers/Content/Data"
+
+# Gentoo's games-server/steamcmd installs the wrapper at /opt/steamcmd/steamcmd.sh
+# (not on PATH). Override per machine in mise.local.toml.
+STEAMCMD = "/opt/steamcmd/steamcmd.sh"
+
+[settings]
+experimental = true

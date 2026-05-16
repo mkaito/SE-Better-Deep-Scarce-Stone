@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+#MISE description="Build and publish the mod to Steam Workshop."
+#MISE depends=["build"]
+set -euo pipefail
+IFS=$'\n\t'
+
+cd "$MISE_PROJECT_ROOT"
+
+# Steam Workshop descriptions cap at 8000 bytes. Strip "Development" section
+# (contributor-only, not for end users).
+sed '/^## Development$/,$d' readme.md \
+    | pandoc -f markdown -t ./vendor/2bbcode/bbcode_steam.lua >|description.bb
+
+description_size=$(wc -c <description.bb)
+if [[ $description_size -gt 7999 ]]; then
+    echo "Description size too big: $description_size. Limit 8000."
+    exit 1
+fi
+
+MOD_ID=2724252237
+
+cat <<EOF >|mod.vdf
+"workshopitem"
+{
+  "appid"             "244850"
+  "publishedfileid"   "$MOD_ID"
+  "contentfolder"     "$PWD/Upload"
+  "description"       "$(cat "$PWD/description.bb")"
+}
+EOF
+
+: "${STEAMPASSWORD:?STEAMPASSWORD must be set in the environment.}"
+: "${STEAMCMD:?STEAMCMD must point to a steamcmd entry point (set in mise.toml).}"
+
+"$STEAMCMD" \
+    +login mkaito "$STEAMPASSWORD" \
+    +workshop_build_item "$(readlink -f ./mod.vdf)" \
+    +quit
