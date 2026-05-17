@@ -2,8 +2,6 @@
 /vendor/POG/config.json
 /vendor/POG/PlanetDataFiles/
 /vendor/POG/PlanetGeneratorDefinitions.sbc
-/vendor/POG/Triton.sbc
-/vendor/POG/Pertam.sbc
 /vendor/POG/generator.log
 
 # Assembled output
