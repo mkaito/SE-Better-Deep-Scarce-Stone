@@ -214,16 +214,16 @@
       "id": 240,
       "type": "Deuterium",
       "surfaceArea": 684,
-      "startDepth": 354,
-      "depth": 489,
+      "startDepth": 800,
+      "depth": 600,
       "testColourHex": "d812ea"
     },
     {
       "id": 241,
       "type": "DenseDeuterium",
       "surfaceArea": 657,
-      "startDepth": 645,
-      "depth": 894,
+      "startDepth": 1000,
+      "depth": 700,
       "testColourHex": "d812ea"
     }
   ],
