@@ -11,10 +11,12 @@ Supports Deuterium (2H) ore from
 Without that mod installed, any Deuterium patches harmlessly revert to
 stone.
 
-Original target was ore depths up to 1200m, but SE's voxel scanning is
-inefficient enough that deep ores became impossible to find on purpose,
-only by accident, regardless of detector range. Depths were pulled
-shallower as a workaround until Keen optimizes voxel scanning.
+The basics (Fe, Ni, Si) are close to the surface, so you can get
+started with a hand drill and a basic ore detector. Anything past that
+goes deep. SE's voxel scanning is subpar enough that you'll only ever
+find the deeper ores by accident without a long-range ore detector mod,
+so I strongly recommend getting one before going hunting for the good
+stuff.
 
 This project is available on
 [GitHub](https://github.com/mkaito/SE-Better-Deep-Scarce-Stone).
@@ -86,10 +88,11 @@ so it has to be configured manually.
 If I'm on X, what will I find?
 
 - EarthLike: Fe, Fe+, Ni, Si, Co
-- Moon, Europa: Fe, Ni, Si, Au, Ag
+- Moon: Fe, Ni, Si, Au, Ag
+- Europa: Fe, Ni, Si, Au, Ag
 - Mars: Fe, Fe+, Ni, Si, Co, Pt
-- Alien: Fe, Fe+, Ni, Si, Mg, Au, U, 2H
-- Titan: Fe, Ni, Si, Au, Ag, Pt
+- Alien: Fe, Fe+, Ni, Si, Mg, Au, U, 2H, 2H+
+- Titan: Fe, Ni, Si, Au, Ag
 - Triton: Fe, Fe+, Ni, Co, Mg
 - Pertam: Fe, Fe+, Ni, Si, Co, Mg, Au, Ag
 
@@ -112,13 +115,14 @@ If I want X, where is it most plentiful?
 One of the main principles behind this mod is that ore deposits should
 be quite rich. When you find one, you'll probably want to set up a
 permanent mining operation on top of it. To compensate for this bounty,
-you'll be searching far longer for them. Deposits are both less
-frequent, and much deeper.
+deposits are less frequent than vanilla, and the higher tiers are much
+deeper.
 
-- T1 (Fe, Ni, Si) at 50m
-- T2 (Co, Mg, Ag) at 150m
-- T3 (Au, Pt, U, 2H) at 300m
-- T4 (2H+) at 400m
+The basics stay shallow so you can get off the ground without much
+fuss, but by the time you're after gold, platinum, uranium or
+deuterium, you'll be running a proper mining ship, not a hand drill.
+Half the fun is figuring out which planet has what — see the summary
+above for the rough shape of it.
 
 ## Intended Gameplay Scenario
 
