@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 #MISE description="Generate ore maps with Procedural Ore Generator. Outputs to vendor/POG/PlanetDataFiles/."
+#MISE depends=["genconfig"]
 set -euo pipefail
 IFS=$'\n\t'
 

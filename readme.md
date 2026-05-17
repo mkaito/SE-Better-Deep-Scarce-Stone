@@ -169,14 +169,16 @@ Here are some notes and recommendations for you:
 Tasks run via [mise](https://mise.jdx.dev):
 
 ```sh
-mise run oregen     # regenerate ore maps with Procedural Ore Generator
+mise run genconfig  # regenerate pog-config.json.template from .mise/tasks/genconfig (a Python script)
+mise run oregen     # regenerate ore maps with Procedural Ore Generator (depends on genconfig)
 mise run build      # stage vanilla planet data + ore maps + overrides into ./Upload/
 mise run publish    # build, then push to Steam Workshop via steamcmd
 ```
 
-`publish` depends on `build`, but `build` does **not** depend on
-`oregen` — ore-map regeneration is a deliberate step. Re-run `oregen`
-only when ore template parameters in `pog-config.json.template` change.
+`oregen` runs `genconfig` first, so editing the genconfig Python
+source and running `oregen` regenerates the config and ore maps in one
+shot. `build` does **not** trigger `oregen` — ore-map regeneration is
+a deliberate step.
 
 ### Environment
 
@@ -193,9 +195,13 @@ Set in `mise.toml`, override per machine in `mise.local.toml`:
 
 - `Data/`, `Assets/` — hand-authored mod content (SBC overrides,
   modinfo, preview).
-- `pog-config.json.template` — Procedural Ore Generator config with
-  `${SE_DATA}` placeholders. Rendered into `vendor/POG/config.json` by
-  the `oregen` task.
+- `.mise/tasks/genconfig` — Python source of truth for the ore
+  distribution: base ores, variant multipliers, per-planet character
+  profiles. Edit this to retune. Run via `mise run genconfig` (or
+  invoke the file directly; mise picks up its shebang).
+- `pog-config.json.template` — generated POG config with `${SE_DATA}`
+  placeholders (gitignored). Rendered into `vendor/POG/config.json` by
+  `oregen`.
 - `vendor/POG/` — bundled
   [Procedural Ore Generator](https://github.com/asrbic/Procedural_Ore_Generator)
   jar + libs. Generated `PlanetDataFiles/` and `.sbc` outputs land here

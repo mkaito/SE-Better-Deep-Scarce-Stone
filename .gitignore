@@ -1,3 +1,6 @@
+# Generated pog config (source of truth: scripts/gen-pog-config.py)
+/pog-config.json.template
+
 # POG output
 /vendor/POG/config.json
 /vendor/POG/PlanetDataFiles/

@@ -1,5 +1,6 @@
 [tools]
 pandoc = "latest"
+python = "3.12"
 # java and steamcmd are managed via portage on Gentoo. Do not list here.
 
 [env]
