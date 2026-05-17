@@ -104,7 +104,7 @@
       "id": 106,
       "type": "Kamacite_01",
       "surfaceArea": 270,
-      "startDepth": 100,
+      "startDepth": 120,
       "depth": 180,
       "testColourHex": "7db9e8"
     },
@@ -112,7 +112,7 @@
       "id": 107,
       "type": "Glaucodot_01",
       "surfaceArea": 220,
-      "startDepth": 100,
+      "startDepth": 120,
       "depth": 200,
       "testColourHex": "7db9e8"
     },
@@ -134,7 +134,7 @@
       "id": 200,
       "type": "Carnotite_01",
       "surfaceArea": 415,
-      "startDepth": 715,
+      "startDepth": 800,
       "depth": 670,
       "testColourHex": "2d9929"
     },
@@ -142,7 +142,7 @@
       "id": 201,
       "type": "Autunite_01",
       "surfaceArea": 375,
-      "startDepth": 700,
+      "startDepth": 850,
       "depth": 700,
       "testColourHex": "2d9929"
     },
@@ -150,7 +150,7 @@
       "id": 202,
       "type": "Uraniaurite_01",
       "surfaceArea": 420,
-      "startDepth": 760,
+      "startDepth": 880,
       "depth": 550,
       "testColourHex": "2d9929"
     },
@@ -190,7 +190,7 @@
       "id": 207,
       "type": "Cooperite_01",
       "surfaceArea": 675,
-      "startDepth": 654,
+      "startDepth": 800,
       "depth": 688,
       "testColourHex": "fcfa6c"
     },
