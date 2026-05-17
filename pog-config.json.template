@@ -57,78 +57,78 @@
       "id": 100,
       "type": "Akimotoite_01",
       "surfaceArea": 270,
-      "startDepth": 470,
-      "depth": 325,
+      "startDepth": 120,
+      "depth": 180,
       "testColourHex": "68fc0c"
     },
     {
       "id": 101,
       "type": "Wadsleyite_01",
       "surfaceArea": 235,
-      "startDepth": 470,
-      "depth": 220,
+      "startDepth": 120,
+      "depth": 180,
       "testColourHex": "68fc0c"
     },
     {
       "id": 102,
       "type": "Olivine_01",
       "surfaceArea": 115,
-      "startDepth": 445,
-      "depth": 325,
+      "startDepth": 130,
+      "depth": 200,
       "testColourHex": "68fc0c"
     },
     {
       "id": 103,
       "type": "Dolomite_01",
       "surfaceArea": 110,
-      "startDepth": 455,
-      "depth": 345,
+      "startDepth": 140,
+      "depth": 200,
       "testColourHex": "68fc0c"
     },
     {
       "id": 104,
       "type": "Cattierite_01",
       "surfaceArea": 215,
-      "startDepth": 455,
-      "depth": 425,
+      "startDepth": 140,
+      "depth": 200,
       "testColourHex": "7db9e8"
     },
     {
       "id": 105,
       "type": "Cohenite_01",
       "surfaceArea": 217,
-      "startDepth": 365,
-      "depth": 272
+      "startDepth": 130,
+      "depth": 200
     },
     {
       "id": 106,
       "type": "Kamacite_01",
       "surfaceArea": 270,
-      "startDepth": 370,
-      "depth": 382,
+      "startDepth": 100,
+      "depth": 180,
       "testColourHex": "7db9e8"
     },
     {
       "id": 107,
       "type": "Glaucodot_01",
       "surfaceArea": 220,
-      "startDepth": 387,
-      "depth": 460,
+      "startDepth": 100,
+      "depth": 200,
       "testColourHex": "7db9e8"
     },
     {
       "id": 108,
       "type": "Galena_01",
       "surfaceArea": 110,
-      "startDepth": 498,
-      "depth": 300
+      "startDepth": 150,
+      "depth": 200
     },
     {
       "id": 109,
       "type": "Chlorargyrite_01",
       "surfaceArea": 320,
-      "startDepth": 650,
-      "depth": 371
+      "startDepth": 180,
+      "depth": 220
     },
     {
       "id": 200,
