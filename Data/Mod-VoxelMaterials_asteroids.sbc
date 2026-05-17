@@ -967,56 +967,11 @@
 
     </VoxelMaterial>
 
-    <!-- Life'Tech Powers -->
-    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
-      <Id>
-        <TypeId>VoxelMaterialDefinition</TypeId>
-        <SubtypeId>Deuterium</SubtypeId>
-      </Id>
-      <MaterialTypeName>Rock</MaterialTypeName>
-      <MinedOre>Deuterium1</MinedOre>
-      <MinedOreRatio>3</MinedOreRatio>
-      <CanBeHarvested>true</CanBeHarvested>
-      <IsRare>true</IsRare>
-      <SpawnsInAsteroids>true</SpawnsInAsteroids>
-      <AsteroidGeneratorSpawnProbabilityMultiplier>1</AsteroidGeneratorSpawnProbabilityMultiplier>
-
-      <MinVersion>1</MinVersion>
-	  
-      <VoxelHandPreview>Textures\Voxels\Deuterium2_Thumbnail.dds</VoxelHandPreview>
-      <ColorMetalXZnY>Textures\Voxels\Deuterium_4_cm.dds</ColorMetalXZnY>
-      <NormalGlossXZnY>Textures\Voxels\Deuterium_ForAxisXZ_ng.dds</NormalGlossXZnY>
-      <ExtXZnY>Textures\Voxels\Deuterium_add.dds</ExtXZnY>
-
-	  
-      <InitialScale>1.5</InitialScale>
-      <ScaleMultiplier>5</ScaleMultiplier>
-      <InitialDistance>5</InitialDistance>
-      <DistanceMultiplier>4</DistanceMultiplier>
-      <TilingScale>24</TilingScale>
-
-      <ExtDetailScale>0.005</ExtDetailScale>
-	  
-      <Far1Distance>30</Far1Distance>
-      <Far1Scale>10</Far1Scale>	  
-	  
-      <Far2Distance>200</Far2Distance>
-      <Far2Scale>35</Far2Scale>
-	  
-	  <Far3Distance>2000</Far3Distance>
-      <Far3Color>
-        <X>0.18</X>
-        <Y>0.34</Y>
-        <Z>0.38</Z>
-        <W>1.0</W>
-      </Far3Color>
-	  
-      <Friction>0.15</Friction>
-      <Restitution>0.9</Restitution>
-      <ColorKey Hex="#DD9B28"/>
-	  
-      <LandingEffect>Landing_Jet_Ground_Snow</LandingEffect>
-    </VoxelMaterial>
+    <!-- Deuterium voxel material is provided by Life'Tech-Powers (Multilingual).
+         BDSS used to redefine it here to override AsteroidGeneratorSpawnProbabilityMultiplier
+         to 1 (vs LTP's 5), but doing so without shipping LTP's textures produced
+         MOD_ERROR entries in the load log. Now deferred to LTP entirely; if LTP
+         isn't installed, BDSS's Deuterium ore deposits fall back to stone. -->
 
   </VoxelMaterials>
 </Definitions>
