@@ -33,4 +33,36 @@ echo '** Merging manual overrides'
 rsync -rtL ./Assets/ ./Upload/
 rsync -rtL ./Data/ ./Upload/Data/
 
+echo '** Copying sky textures referenced by planet defs'
+# SE on Linux has flaky path resolution for vanilla sky textures: capital-A
+# `_Alphamask.dds` fails case lookup outright; some lowercase files (Landsky_texture,
+# TritonAurora) fail to resolve in the game folder even with matching case.
+# Shipping copies in the mod folder sidesteps both failure modes — mod-folder
+# textures take precedence over game-folder lookups. Repo never contains these
+# copyrighted vanilla files; they are sourced from the local SE install at build
+# time and only land in the (gitignored) Upload/ tree for Workshop publishing.
+SE_SKY="$SE_DATA/../Textures/Models/Environment/Sky"
+if [[ -d "$SE_SKY" ]]; then
+    mkdir -p ./Upload/Textures/Models/Environment/Sky
+    # Stems are the <Texture> values inside the staged planet defs (without
+    # suffix or extension). SE appends `_cm.dds` and `_alphamask.dds` to look up
+    # the colormap and alphamask textures.
+    mapfile -t stems < <(
+        grep -oE 'Sky/[A-Za-z0-9_]+\.dds' ./Upload/Data/PlanetGeneratorDefinitions.sbc \
+            | sed -E 's|Sky/||; s|\.dds$||' | sort -u
+    )
+    for stem in "${stems[@]}"; do
+        # Try every casing of the suffix that vanilla actually ships, normalize
+        # to lowercase in the output filename.
+        for suffix in _cm _alphamask _Alphamask; do
+            src="$SE_SKY/${stem}${suffix}.dds"
+            [[ -f "$src" ]] || continue
+            target_suffix="${suffix,,}"
+            cp "$src" "./Upload/Textures/Models/Environment/Sky/${stem}${target_suffix}.dds"
+        done
+    done
+else
+    echo "warning: $SE_SKY not found; skipping sky texture copy" >&2
+fi
+
 echo "Staged to ./Upload"
