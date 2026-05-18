@@ -16,15 +16,14 @@ cd "$MISE_PROJECT_ROOT"
     exit 1
 }
 
-# POG reads ./config.json and ./lib/* relative to cwd. Render template into
-# vendor/POG/ and invoke from there.
+# POG reads ./config.json and ./lib/* from cwd.
 envsubst <pog-config.json.template >vendor/POG/config.json
 
 cd vendor/POG
-# POG's Main waits for ENTER to exit. Feed it a newline so the task can run
-# non-interactively (e.g. under `mise run oregen`).
+# Empty stdin satisfies POG's "press ENTER" prompt.
 java -Xms512m -Xmx4g -cp 'Procedural_Ore_Generator.jar:lib/*' core.Main <<<""
 
 cd "$MISE_PROJECT_ROOT"
-# Convert POG's BBCode tile-count table from generator.log to a markdown doc.
-.mise/tasks/poglog2md
+# Convert to markdown + prettier-normalize (else next pre-commit churns the file).
+.mise/tasks/poglog2md.py
+prettier --write doc/ore-deposit-counts.md >/dev/null

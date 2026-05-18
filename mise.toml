@@ -1,17 +1,40 @@
 [tools]
+# java + steamcmd live in portage (Gentoo).
 pandoc = "latest"
 python = "3.12"
-# java and steamcmd are managed via portage on Gentoo. Do not list here.
+node = "lts"
+ruff = "latest"
+pre-commit = "latest"
+"npm:prettier" = "latest"
 
 [env]
-# Vanilla SE install Data directory. Used by oregen (POG reads vanilla planet
-# data) and build (rsyncs vanilla PlanetDataFiles into Upload/). Override per
-# machine in mise.local.toml.
+# Override per-machine in mise.local.toml.
 SE_DATA = "/mnt/steamone/SteamLibrary/steamapps/common/SpaceEngineers/Content/Data"
-
-# Gentoo's games-server/steamcmd installs the wrapper at /opt/steamcmd/steamcmd.sh
-# (not on PATH). Override per machine in mise.local.toml.
 STEAMCMD = "/opt/steamcmd/steamcmd.sh"
 
 [settings]
 experimental = true
+
+[tasks.setup]
+description = "One-shot dev env setup (after `mise install`). Wires git hooks."
+run = "pre-commit install"
+
+[tasks."format:python"]
+description = "Format Python (ruff)."
+run = "ruff check --fix . && ruff format ."
+
+[tasks."format:md"]
+description = "Format Markdown/YAML (prettier)."
+run = "prettier --write '**/*.md' '**/*.yaml'"
+
+[tasks."format:xml"]
+description = "Format SBC files (xmllint)."
+run = '''
+for f in Data/*.sbc; do
+  xmllint --format --output "$f" "$f"
+done
+'''
+
+[tasks.format]
+description = "Run all formatters."
+depends = ["format:python", "format:md", "format:xml"]

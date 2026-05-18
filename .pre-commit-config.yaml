@@ -1,0 +1,33 @@
+exclude: "^(vendor/|Upload/)"
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: mixed-line-ending
+        args: [--fix=lf]
+      - id: check-merge-conflict
+
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.15.13
+    hooks:
+      - id: ruff
+        args: [--fix]
+      - id: ruff-format
+
+  - repo: https://github.com/rbubley/mirrors-prettier
+    rev: v3.8.3
+    hooks:
+      - id: prettier
+        types_or: [markdown, yaml]
+        exclude: '^pog-config\.json\.template$'
+
+  - repo: local
+    hooks:
+      - id: xmllint-sbc
+        name: format SBC files (xmllint)
+        entry: bash -c 'for f in "$@"; do xmllint --format --output "$f" "$f"; done' --
+        language: system
+        files: '\.sbc$'
