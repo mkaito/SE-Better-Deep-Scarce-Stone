@@ -7,9 +7,11 @@ Ores](https://steamcommunity.com/sharedfiles/filedetails/?id=2281727435)
 rebalance once I started playing with the numbers in earnest.
 
 Supports Deuterium (2H) ore from
-[Life'Tech-Powers](https://steamcommunity.com/sharedfiles/filedetails/?id=2558149005).
-Without that mod installed, any Deuterium patches harmlessly revert to
-stone.
+[Life'Tech-Powers](https://steamcommunity.com/sharedfiles/filedetails/?id=2558149005),
+and Caixirite (Cxr) ore from [Outer Planets
+Consolidation](https://steamcommunity.com/sharedfiles/filedetails/?id=3719884258).
+Without those mods installed, the corresponding ore patches harmlessly
+revert to stone.
 
 The basics (Fe, Ni, Si) are close to the surface, so you can get
 started with a hand drill and a basic ore detector. Anything past that
@@ -25,9 +27,9 @@ This project is available on
 
 EarthLike has Iron, Nickel, Silicon, Cobalt and small quantities of
 Magnesium in surface boulders. You'll want to head to the Moon for Gold
-and Silver, Mars for Platinum, Alien for Uranium and Deuterium.
-Magnesium is available in varying small quantities everywhere, and large
-quantities on Triton.
+and Silver, Mars for Platinum, Alien for Uranium, Deuterium, and
+Caixirite. Magnesium is available in varying small quantities
+everywhere, and large quantities on Triton.
 
 Pertam has the same as EarthLike, but also small quantities of Silver
 and Gold, since it doesn't have a local moon, as well as actual (rare)
@@ -88,11 +90,11 @@ so it has to be configured manually.
 If I'm on X, what will I find?
 
 - EarthLike: Fe, Fe+, Ni, Si, Co
-- Moon: Fe, Ni, Si, Au, Ag
-- Europa: Fe, Ni, Si, Au, Ag
+- Moon: Fe, Ni, Si, Au, Ag, trace 2H/Cxr
+- Europa: Fe, Ni, Si, Au, Ag, trace 2H/Cxr
 - Mars: Fe, Fe+, Ni, Si, Co, Pt
-- Alien: Fe, Fe+, Ni, Si, Mg, Au, U, 2H, 2H+
-- Titan: Fe, Ni, Si, Au, Ag
+- Alien: Fe, Fe+, Ni, Si, Mg, Au, U, 2H, 2H+, Cxr
+- Titan: Fe, Ni, Si, Au, Ag, trace 2H/Cxr
 - Triton: Fe, Fe+, Ni, Co, Mg
 - Pertam: Fe, Fe+, Ni, Si, Co, Mg, Au, Ag
 
@@ -109,6 +111,7 @@ If I want X, where is it most plentiful?
 - U: Alien
 - 2H: Alien
 - 2H+: Alien
+- Cxr: Alien
 
 ## Ore Deposits
 
@@ -119,8 +122,8 @@ deposits are less frequent than vanilla, and the higher tiers are much
 deeper.
 
 The basics stay shallow so you can get off the ground without much
-fuss, but by the time you're after gold, platinum, uranium or
-deuterium, you'll be running a proper mining ship, not a hand drill.
+fuss, but by the time you're after gold, platinum, uranium, deuterium,
+or caixirite, you'll be running a proper mining ship, not a hand drill.
 Half the fun is figuring out which planet has what — see the summary
 above for the rough shape of it.
 
@@ -199,6 +202,13 @@ Set in `mise.toml`, override per machine in `mise.local.toml`:
   distribution: base ores, variant multipliers, per-planet character
   profiles. Edit this to retune. Run via `mise run genconfig` (or
   invoke the file directly; mise picks up its shebang).
+- `.mise/tasks/poglog2md` — Python helper that converts POG's BBCode
+  tile-count table from `vendor/POG/generator.log` into
+  `doc/ore-deposit-counts.md`. Invoked automatically at the end of
+  `oregen`.
+- `doc/ore-deposit-counts.md` — generated per-planet tile counts.
+  Committed for dev reference and to surface distribution shifts in
+  diffs.
 - `pog-config.json.template` — generated POG config with `${SE_DATA}`
   placeholders (gitignored). Rendered into `vendor/POG/config.json` by
   `oregen`.

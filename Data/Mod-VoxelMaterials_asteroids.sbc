@@ -973,6 +973,11 @@
          MOD_ERROR entries in the load log. Now deferred to LTP entirely; if LTP
          isn't installed, BDSS's Deuterium ore deposits fall back to stone. -->
 
+    <!-- Caixirite_Raw voxel material is provided by OPC mod 3719884258.
+         Same deferral pattern as Deuterium: BDSS does not redefine it (would need
+         the mod's textures). If OPC isn't installed, BDSS's Caixirite ore deposits
+         (Alien primary, trace on Moon/Europa/Titan) fall back to stone. -->
+
     <!-- Vanilla generic asteroid ores. Disabled here so asteroid spawns are
          exclusively the BS named subtypes (Heazlewoodite, Cattierite, etc.).
          Textures still resolve from the game install for any non-asteroid uses. -->

@@ -34,6 +34,11 @@ BASE_ORES = {
     "deuterium":      dict(type="Deuterium",      id_base=40,  surfaceArea=684, startDepth=800,  depth=600, colour="d812ea"),
     "denseDeuterium": dict(type="DenseDeuterium", id_base=45,  surfaceArea=657, startDepth=1000, depth=700, colour="d812ea"),
 
+    # Caixirite (modded, OPC 3719884258) — IDs 50-54.
+    # Author ships voxel with MinedOreRatio=0.01 (300x lower than LTP Deuterium=3),
+    # so deposits are oversized to keep total yield meaningful but still scarce.
+    "caixirite":      dict(type="Caixirite_Raw",  id_base=50,  surfaceArea=1200, startDepth=900, depth=1300, colour="ff6b9a"),
+
     # T2 (Co / Mg / Ag) — IDs 100-149
     "akimotoite":    dict(type="Akimotoite_01",    id_base=100, surfaceArea=270, startDepth=120, depth=180, colour="68fc0c"),
     "wadsleyite":    dict(type="Wadsleyite_01",    id_base=105, surfaceArea=235, startDepth=120, depth=180, colour="68fc0c"),
@@ -92,6 +97,7 @@ PLANET_ORES = {
         "quartz": 50, "heazlewoodite": 50,
         "galena": 5, "pyrite": 5, "porphyry": 5,
         "petzite": 0.5, "electrum": 0.5,
+        "deuterium": 0.5, "caixirite": 0.5,
     },
     "Mars": {
         "quartz": 50, "hapkeite": 50, "taenite": 50,
@@ -102,16 +108,19 @@ PLANET_ORES = {
         "hapkeite": 50, "taenite": 50, "galena": 50,
         "chlorargyrite": 5, "porphyry": 5,
         "petzite": 0.5, "electrum": 0.5,
+        "deuterium": 0.5, "caixirite": 0.5,
     },
     "Alien": {
         "heazlewoodite": 50, "hapkeite": 50, "taenite": 50,
         "iron": 5, "carnotite": 5, "autunite": 5,
         "uraniaurite": 0.5, "wadsleyite": 0.5, "kamacite": 0.5, "glaucodot": 0.5,
         "deuterium": 5, "denseDeuterium": 0.5,
+        "caixirite": 5,
     },
     "Titan": {
         "pyrite": 50, "quartz": 50, "taenite": 50,
         "hapkeite": 5, "electrum": 5, "porphyry": 5, "petzite": 5,
+        "deuterium": 0.5, "caixirite": 0.5,
     },
     "Triton": {
         "iron": 50, "wadsleyite": 50, "heazlewoodite": 50,

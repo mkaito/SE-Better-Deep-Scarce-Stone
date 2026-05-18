@@ -24,3 +24,7 @@ cd vendor/POG
 # POG's Main waits for ENTER to exit. Feed it a newline so the task can run
 # non-interactively (e.g. under `mise run oregen`).
 java -Xms512m -Xmx4g -cp 'Procedural_Ore_Generator.jar:lib/*' core.Main <<<""
+
+cd "$MISE_PROJECT_ROOT"
+# Convert POG's BBCode tile-count table from generator.log to a markdown doc.
+.mise/tasks/poglog2md

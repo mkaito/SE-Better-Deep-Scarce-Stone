@@ -15,8 +15,16 @@ BDSS additions:
    Carnotite = U+Ice). See [better-stone-ores.md](better-stone-ores.md).
 2. Deuterium / Dense Deuterium from [Life'Tech-Powers
    (Multilingual)](https://steamcommunity.com/sharedfiles/filedetails/?id=2558149005)
-   as Alien-only endgame energy. Without LTP, Deuterium voxels fall back
-   to stone.
+   as endgame energy. Large deposits on Alien; trace deposits on
+   Moon/Europa/Titan. Dense Deuterium stays Alien-exclusive. Without LTP,
+   Deuterium voxels fall back to stone.
+3. Caixirite from [Outer Planets Consolidation
+   (OPC)](https://steamcommunity.com/sharedfiles/filedetails/?id=3719884258)
+   as alternate endgame fuel. OPC ships the voxel material with no spawn
+   rules and an extreme `MinedOreRatio=0.01` (vs LTP Deuterium=3, BS
+   ores=0.5); BDSS places it in deep Alien deposits sized to compensate
+   for the low ratio, plus trace deposits on Moon/Europa/Titan. Without
+   OPC, Caixirite voxels fall back to stone.
 
 ## Tier system
 
@@ -25,7 +33,7 @@ BDSS additions:
 | T1 | Fe, Ni, Si | Surface-up basics. All planets. |
 | T2 | Co, Mg, Ag | Combat (Mg = ammo/explosives), medical (Ag), conveyor + advanced (Co) |
 | T3 | Au | Jump drives, gravity gen |
-| T4 | U, Pt, 2H, 2H+ | Endgame power + late tech |
+| T4 | U, Pt, 2H, 2H+, Cxr | Endgame power + late tech |
 
 ### Max-tier rule
 
@@ -40,6 +48,7 @@ Ore tier = highest tier of any mineral it yields.
 | Pyrite | Fe + Au | T3 |
 | Carnotite | U + Ice | T4 |
 | Cooperite | Ni + Pt | T4 |
+| Caixirite | Cxr | T4 |
 
 Ore tier determines depth band. Generator (`.mise/tasks/genconfig`) does
 not enforce the rule. Baselines are hand-set to respect it. When adding a
@@ -57,6 +66,7 @@ Variant spread is ±50% around baseline. See [pog.md](pog.md).
 | T4 (Pt/U) | 400–900m+ |
 | T4 (2H) | 400–1200m |
 | T4+ (2H+) | 500–1500m |
+| T4 (Cxr) | 450–1350m |
 
 1200m-range detector covers T1, T2, T3, and shallow T4. Deep T4 needs
 fancier detector mod or exploratory drilling.
@@ -102,12 +112,14 @@ p=5, Petzite + Electrum p=0.5.
 
 Si: Quartz p=50. Ni: Heazlewoodite p=50. Ag: Galena p=5. Au: Pyrite p=5
 (Fe+Au), Porphyry p=5 (pure Au), trace Petzite/Electrum p=0.5. Fe via
-Pyrite only.
+Pyrite only. Trace endgame: Deuterium p=0.5, Caixirite p=0.5 (small
+moon deposits; main source is Alien).
 
 ### Europa
 
 Fe: Hapkeite p=50. Ni: Taenite p=50. Si: Hapkeite. Ag: Galena p=50,
-Chlorargyrite p=5. Au: Porphyry p=5, trace Petzite/Electrum.
+Chlorargyrite p=5. Au: Porphyry p=5, trace Petzite/Electrum. Trace
+endgame: Deuterium p=0.5, Caixirite p=0.5.
 
 ### Mars
 
@@ -119,14 +131,17 @@ p=0.5.
 
 T1: Heazlewoodite p=50, Hapkeite p=50, Taenite p=50, Iron_02 p=5. U:
 Carnotite p=5, Autunite p=5, Uraniaurite p=0.5. 2H: Deuterium p=5,
-DenseDeuterium p=0.5. Trace Wadsleyite/Kamacite/Glaucodot p=0.5.
+DenseDeuterium p=0.5. Cxr: Caixirite p=5 (OPC). Trace
+Wadsleyite/Kamacite/Glaucodot p=0.5.
 
-Carnotite yields more Ice than Uranium per tile.
+Carnotite yields more Ice than Uranium per tile. Caixirite ratio is
+0.01, so per-deposit yield is trace despite oversized deposit footprint.
 
 ### Titan
 
 Pyrite p=50, Quartz p=50, Taenite p=50, Hapkeite p=5. Au: Porphyry p=5,
-Electrum p=5, Petzite p=5.
+Electrum p=5, Petzite p=5. Trace endgame: Deuterium p=0.5, Caixirite
+p=0.5.
 
 ### Triton
 
@@ -174,7 +189,9 @@ needed in VoxelMaterialChanges for those two.
 generic ores (Nickel_01, Cobalt_01, Magnesium_01, Silicon_01, Silver_01,
 Gold_01, Platinum_01, Uraninite_01) overridden to `SpawnsInAsteroids=false`.
 
-Dense Deuterium absent from asteroids — Alien-exclusive.
+Dense Deuterium absent from asteroids — Alien-exclusive. Caixirite voxel
+deferred to OPC (BDSS does not redefine); asteroid behaviour governed by
+whatever OPC ships (currently no explicit spawn fields).
 
 BS ore asteroid spawn multipliers:
 

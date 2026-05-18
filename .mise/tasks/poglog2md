@@ -1,0 +1,57 @@
+#!/usr/bin/env python3
+#MISE description="Convert POG's BBCode tile-count table from generator.log to doc/ore-deposit-counts.md."
+"""Extract the most recent [table]...[/table] block from POG's generator.log
+and render as Markdown. POG appends to the log on each run, so always take
+the LAST table."""
+
+from __future__ import annotations
+import re
+from pathlib import Path
+
+LOG = Path("vendor/POG/generator.log")
+OUT = Path("doc/ore-deposit-counts.md")
+
+
+def extract_last_table(text: str) -> str:
+    starts = [m.start() for m in re.finditer(r"^\[table\]\s*$", text, re.M)]
+    ends = [m.end() for m in re.finditer(r"^\[/table\]\s*$", text, re.M)]
+    if not starts or not ends or ends[-1] < starts[-1]:
+        raise SystemExit(f"No complete [table]...[/table] block in {LOG}")
+    return text[starts[-1]:ends[-1]]
+
+
+def parse_rows(block: str) -> list[list[str]]:
+    rows = []
+    for part in re.split(r"\[tr\]", block)[1:]:
+        cells = re.findall(r"\[(?:th|td)\](.*?)\[/(?:th|td)\]", part, re.S)
+        rows.append([c.strip() for c in cells])
+    return [r for r in rows if r]
+
+
+def main() -> None:
+    text = LOG.read_text()
+    rows = parse_rows(extract_last_table(text))
+    header, *data = rows
+    if header and header[0] == "":
+        header[0] = "Ore"
+    data.sort(key=lambda r: r[0].lower())
+
+    lines = [
+        "# Generated Ore Deposit Counts",
+        "",
+        "Generated from `vendor/POG/generator.log` by `mise run oregen`. Do not edit by hand.",
+        "",
+        "Tile counts per ore per planet, summed across the 5 size variants.",
+        "Useful for sanity-checking ore distribution after tuning `.mise/tasks/genconfig`.",
+        "",
+        "| " + " | ".join(header) + " |",
+        "| " + " | ".join(["---"] * len(header)) + " |",
+    ]
+    for row in data:
+        lines.append("| " + " | ".join(row) + " |")
+    OUT.write_text("\n".join(lines) + "\n")
+    print(f"Wrote {OUT} ({len(data)} ores x {len(header) - 1} planets)")
+
+
+if __name__ == "__main__":
+    main()
