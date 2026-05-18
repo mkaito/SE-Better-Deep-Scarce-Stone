@@ -2,7 +2,7 @@
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <VoxelMaterials>
     <!-- asteroid materials-->
-	<VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
       <Id>
         <TypeId>VoxelMaterialDefinition</TypeId>
         <SubtypeId>Iron_01</SubtypeId>
@@ -16,15 +16,13 @@
       <AsteroidGeneratorSpawnProbabilityMultiplier>100</AsteroidGeneratorSpawnProbabilityMultiplier>
       <IsIndestructible>false</IsIndestructible>
       <ParticleEffect>Collision_Meteor</ParticleEffect>
-      
       <SpecularPower>24</SpecularPower>
       <SpecularShininess>0.498</SpecularShininess>
-
       <VoxelHandPreview>Textures\Voxels\Iron_01_Thumbnail.dds</VoxelHandPreview>
       <ColorMetalXZnY>Textures\Voxels\Iron_01_ForAxisXZ_cm.dds</ColorMetalXZnY>
       <NormalGlossXZnY>Textures\Voxels\Iron_01_ForAxisXZ_ng.dds</NormalGlossXZnY>
       <ExtXZnY>Textures\Voxels\Iron_01_ForAxisXZ_add.dds</ExtXZnY>
-	  <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect>            
+      <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect>
     </VoxelMaterial>
     <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
       <Id>
@@ -40,15 +38,12 @@
       <AsteroidGeneratorSpawnProbabilityMultiplier>50</AsteroidGeneratorSpawnProbabilityMultiplier>
       <IsIndestructible>false</IsIndestructible>
       <ParticleEffect>Collision_Meteor</ParticleEffect>
-      
       <SpecularPower>8</SpecularPower>
       <SpecularShininess>0.23</SpecularShininess>
-
       <VoxelHandPreview>Textures\Voxels\Iron_02_Thumbnail.dds</VoxelHandPreview>
-      <ColorMetalXZnY>Textures\Voxels\Iron_02_ForAxisXZ_cm.dds</ColorMetalXZnY>   
+      <ColorMetalXZnY>Textures\Voxels\Iron_02_ForAxisXZ_cm.dds</ColorMetalXZnY>
       <NormalGlossXZnY>Textures\Voxels\Iron_02_ForAxisXZ_ng.dds</NormalGlossXZnY>
       <ExtXZnY>Textures\Voxels\Iron_02_ForAxisXZ_add.dds</ExtXZnY>
-
       <Far3Distance>10000</Far3Distance>
       <Far3Color>
         <X>0.08</X>
@@ -56,7 +51,7 @@
         <Z>0</Z>
         <W>1.0</W>
       </Far3Color>
-	  <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect>     
+      <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect>
     </VoxelMaterial>
     <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
       <Id>
@@ -80,9 +75,7 @@
       <ColorMetalY>Textures\Voxels\Stone_04_ForAxisY_cm.dds</ColorMetalY>
       <NormalGlossXZnY>Textures\Voxels\Stone_04_ForAxisXZ_ng.dds</NormalGlossXZnY>
       <NormalGlossY>Textures\Voxels\Stone_04_ForAxisY_ng.dds</NormalGlossY>
-
       <!--QUICK AND DIRTY COPY AND PASTE-->
-
       <Far3Distance>2000</Far3Distance>
       <Far3Color>
         <X>0.17</X>
@@ -90,10 +83,8 @@
         <Z>0.20</Z>
         <W>1.0</W>
       </Far3Color>
-      
       <ColorKey Hex="#DD9B28"/>
-	  <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect> 
-
+      <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect>
     </VoxelMaterial>
     <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
       <Id>
@@ -115,9 +106,7 @@
       <VoxelHandPreview>Textures\Voxels\AlienGreenGrass_Thumbnail.dds</VoxelHandPreview>
       <ColorMetalXZnY>Textures\Voxels\AlienGreenGrass_cm.dds</ColorMetalXZnY>
       <NormalGlossXZnY>Textures\Voxels\AlienGreenGrass_ng.dds</NormalGlossXZnY>
-
       <!--QUICK AND DIRTY COPY AND PASTE-->
-
       <Far3Distance>2000</Far3Distance>
       <Far3Color>
         <X>0.17</X>
@@ -125,10 +114,8 @@
         <Z>0.20</Z>
         <W>1.0</W>
       </Far3Color>
-      
       <ColorKey Hex="#DD9B28"/>
-	  <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect> 
-
+      <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect>
     </VoxelMaterial>
     <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
       <Id>
@@ -152,9 +139,7 @@
       <ColorMetalY>Textures\Voxels\Stone_02_ForAxisY_cm.dds</ColorMetalY>
       <NormalGlossXZnY>Textures\Voxels\Stone_02_ForAxisXZ_ng.dds</NormalGlossXZnY>
       <NormalGlossY>Textures\Voxels\Stone_02_ForAxisY_ng.dds</NormalGlossY>
-
       <!--QUICK AND DIRTY COPY AND PASTE-->
-
       <Far3Distance>2000</Far3Distance>
       <Far3Color>
         <X>0.17</X>
@@ -162,10 +147,8 @@
         <Z>0.20</Z>
         <W>1.0</W>
       </Far3Color>
-      
       <ColorKey Hex="#DD9B28"/>
-	  <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect> 
-
+      <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect>
     </VoxelMaterial>
     <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
       <Id>
@@ -189,9 +172,7 @@
       <ColorMetalY>Textures\Voxels\Stone_03_ForAxisY_cm.dds</ColorMetalY>
       <NormalGlossXZnY>Textures\Voxels\Stone_03_ForAxisXZ_ng.dds</NormalGlossXZnY>
       <NormalGlossY>Textures\Voxels\Stone_03_ForAxisY_ng.dds</NormalGlossY>
-
       <!--QUICK AND DIRTY COPY AND PASTE-->
-
       <Far3Distance>2000</Far3Distance>
       <Far3Color>
         <X>0.17</X>
@@ -199,16 +180,14 @@
         <Z>0.20</Z>
         <W>1.0</W>
       </Far3Color>
-      
       <ColorKey Hex="#DD9B28"/>
-	  <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect> 
-
+      <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect>
     </VoxelMaterial>
     <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
       <Id>
         <TypeId>VoxelMaterialDefinition</TypeId>
         <SubtypeId>Cattierite_01</SubtypeId>
-      </Id>    
+      </Id>
       <MaterialTypeName>Rock</MaterialTypeName>
       <MinedOre>[CM] Cattierite (Co)</MinedOre>
       <MinedOreRatio>0.6</MinedOreRatio>
@@ -226,9 +205,7 @@
       <ColorMetalY>Textures\Voxels\Stone_04_ForAxisY_cm.dds</ColorMetalY>
       <NormalGlossXZnY>Textures\Voxels\Stone_04_ForAxisXZ_ng.dds</NormalGlossXZnY>
       <NormalGlossY>Textures\Voxels\Stone_04_ForAxisY_ng.dds</NormalGlossY>
-
       <!--QUICK AND DIRTY COPY AND PASTE-->
-
       <Far3Distance>2000</Far3Distance>
       <Far3Color>
         <X>0.17</X>
@@ -236,10 +213,8 @@
         <Z>0.20</Z>
         <W>1.0</W>
       </Far3Color>
-      
       <ColorKey Hex="#DD9B28"/>
-	  <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect> 
-
+      <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect>
     </VoxelMaterial>
     <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
       <Id>
@@ -263,9 +238,7 @@
       <ColorMetalY>Textures\Voxels\Stone_03_ForAxisY_cm.dds</ColorMetalY>
       <NormalGlossXZnY>Textures\Voxels\Stone_03_ForAxisXZ_ng.dds</NormalGlossXZnY>
       <NormalGlossY>Textures\Voxels\Stone_03_ForAxisY_ng.dds</NormalGlossY>
-
       <!--QUICK AND DIRTY COPY AND PASTE-->
-
       <Far3Distance>2000</Far3Distance>
       <Far3Color>
         <X>0.17</X>
@@ -273,10 +246,8 @@
         <Z>0.20</Z>
         <W>1.0</W>
       </Far3Color>
-      
       <ColorKey Hex="#DD9B28"/>
-	  <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect> 
-
+      <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect>
     </VoxelMaterial>
     <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
       <Id>
@@ -300,9 +271,7 @@
       <ColorMetalY>Textures\Voxels\AlienSand_cm.dds</ColorMetalY>
       <NormalGlossXZnY>Textures\Voxels\AlienYellowGrass_ng.dds</NormalGlossXZnY>
       <NormalGlossY>Textures\Voxels\AlienSand_ng.dds</NormalGlossY>
-
       <!--QUICK AND DIRTY COPY AND PASTE-->
-
       <Far3Distance>2000</Far3Distance>
       <Far3Color>
         <X>0.17</X>
@@ -310,10 +279,8 @@
         <Z>0.20</Z>
         <W>1.0</W>
       </Far3Color>
-      
       <ColorKey Hex="#DD9B28"/>
-	  <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect> 
-
+      <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect>
     </VoxelMaterial>
     <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
       <Id>
@@ -335,9 +302,7 @@
       <VoxelHandPreview>Textures\Voxels\Silver_01_Thumbnail.dds</VoxelHandPreview>
       <ColorMetalXZnY>Textures\Voxels\Silver_01_ForAxisXZ_cm.dds</ColorMetalXZnY>
       <NormalGlossXZnY>Textures\Voxels\Silver_01_ForAxisXZ_ng.dds</NormalGlossXZnY>
-
       <!--QUICK AND DIRTY COPY AND PASTE-->
-
       <Far3Distance>2000</Far3Distance>
       <Far3Color>
         <X>0.17</X>
@@ -345,10 +310,8 @@
         <Z>0.20</Z>
         <W>1.0</W>
       </Far3Color>
-      
       <ColorKey Hex="#DD9B28"/>
-	  <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect> 
-
+      <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect>
     </VoxelMaterial>
     <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
       <Id>
@@ -372,9 +335,7 @@
       <ColorMetalY>Textures\Voxels\Stone_05_ForAxisXZ_cm.dds</ColorMetalY>
       <NormalGlossXZnY>Textures\Voxels\Stone_05_ForAxisXZ_ng.dds</NormalGlossXZnY>
       <NormalGlossY>Textures\Voxels\Stone_05_ForAxisXZ_ng.dds</NormalGlossY>
-
       <!--QUICK AND DIRTY COPY AND PASTE-->
-
       <Far3Distance>2000</Far3Distance>
       <Far3Color>
         <X>0.17</X>
@@ -382,16 +343,14 @@
         <Z>0.20</Z>
         <W>1.0</W>
       </Far3Color>
-      
       <ColorKey Hex="#DD9B28"/>
-	  <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect> 
-
+      <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect>
     </VoxelMaterial>
     <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
       <Id>
         <TypeId>VoxelMaterialDefinition</TypeId>
         <SubtypeId>Pyrite_01</SubtypeId>
-      </Id>    
+      </Id>
       <MaterialTypeName>Rock</MaterialTypeName>
       <MinedOre>[CM] Pyrite (Fe,Au)</MinedOre>
       <MinedOreRatio>0.52</MinedOreRatio>
@@ -407,9 +366,7 @@
       <VoxelHandPreview>Textures\Voxels\Gold_01_Thumbnail.dds</VoxelHandPreview>
       <ColorMetalXZnY>Textures\Voxels\Gold_01_ForAxisXZ_cm.dds</ColorMetalXZnY>
       <NormalGlossXZnY>Textures\Voxels\Gold_01_ForAxisXZ_ng.dds</NormalGlossXZnY>
-
       <!--QUICK AND DIRTY COPY AND PASTE-->
-
       <Far3Distance>2000</Far3Distance>
       <Far3Color>
         <X>0.17</X>
@@ -417,16 +374,14 @@
         <Z>0.20</Z>
         <W>1.0</W>
       </Far3Color>
-      
       <ColorKey Hex="#DD9B28"/>
-	  <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect> 
-
+      <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect>
     </VoxelMaterial>
     <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
       <Id>
         <TypeId>VoxelMaterialDefinition</TypeId>
         <SubtypeId>Olivine_01</SubtypeId>
-      </Id>    
+      </Id>
       <MaterialTypeName>Rock</MaterialTypeName>
       <MinedOre>[S] Olivine (Si,Mg)</MinedOre>
       <MinedOreRatio>0.5</MinedOreRatio>
@@ -444,9 +399,7 @@
       <ColorMetalY>Textures\Voxels\Nickel_01_ForAxisXZ_cm.dds</ColorMetalY>
       <NormalGlossXZnY>Textures\Voxels\AlienIce_ng.dds</NormalGlossXZnY>
       <NormalGlossY>Textures\Voxels\Nickel_01_ForAxisXZ_ng.dds</NormalGlossY>
-
       <!--QUICK AND DIRTY COPY AND PASTE-->
-
       <Far3Distance>2000</Far3Distance>
       <Far3Color>
         <X>0.17</X>
@@ -454,16 +407,14 @@
         <Z>0.20</Z>
         <W>1.0</W>
       </Far3Color>
-      
       <ColorKey Hex="#DD9B28"/>
-	  <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect> 
-
+      <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect>
     </VoxelMaterial>
     <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
       <Id>
         <TypeId>VoxelMaterialDefinition</TypeId>
         <SubtypeId>Cooperite_01</SubtypeId>
-      </Id>    
+      </Id>
       <MaterialTypeName>Rock</MaterialTypeName>
       <MinedOre>[PM] Cooperite (Ni,Pt)</MinedOre>
       <MinedOreRatio>0.19</MinedOreRatio>
@@ -481,9 +432,7 @@
       <ColorMetalY>Textures\Voxels\Cobalt_01_ForAxisXZ_cm.dds</ColorMetalY>
       <NormalGlossXZnY>Textures\Voxels\AlienOrangeGrass_ng.dds</NormalGlossXZnY>
       <NormalGlossY>Textures\Voxels\Cobalt_01_ForAxisXZ_ng.dds</NormalGlossY>
-
       <!--QUICK AND DIRTY COPY AND PASTE-->
-
       <Far3Distance>2000</Far3Distance>
       <Far3Color>
         <X>0.17</X>
@@ -491,16 +440,14 @@
         <Z>0.20</Z>
         <W>1.0</W>
       </Far3Color>
-      
       <ColorKey Hex="#DD9B28"/>
-	  <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect> 
-
+      <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect>
     </VoxelMaterial>
     <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
       <Id>
         <TypeId>VoxelMaterialDefinition</TypeId>
         <SubtypeId>Quartz_01</SubtypeId>
-      </Id>    
+      </Id>
       <MaterialTypeName>Rock</MaterialTypeName>
       <MinedOre>[S] Quartz (Si)</MinedOre>
       <MinedOreRatio>0.41</MinedOreRatio>
@@ -516,9 +463,7 @@
       <VoxelHandPreview>Textures\Voxels\Ice_01_Thumbnail.dds</VoxelHandPreview>
       <ColorMetalXZnY>Textures\Voxels\Ice_01_ForAxisXZ_cm.dds</ColorMetalXZnY>
       <NormalGlossXZnY>Textures\Voxels\Ice_01_ForAxisXZ_ng.dds</NormalGlossXZnY>
-
       <!--QUICK AND DIRTY COPY AND PASTE-->
-
       <Far3Distance>2000</Far3Distance>
       <Far3Color>
         <X>0.17</X>
@@ -526,16 +471,14 @@
         <Z>0.20</Z>
         <W>1.0</W>
       </Far3Color>
-      
       <ColorKey Hex="#DD9B28"/>
-	  <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect> 
-
+      <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect>
     </VoxelMaterial>
     <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
       <Id>
         <TypeId>VoxelMaterialDefinition</TypeId>
         <SubtypeId>Galena_01</SubtypeId>
-      </Id>    
+      </Id>
       <MaterialTypeName>Rock</MaterialTypeName>
       <MinedOre>[PM] Galena (Ag)</MinedOre>
       <MinedOreRatio>0.43</MinedOreRatio>
@@ -551,9 +494,7 @@
       <VoxelHandPreview>Textures\Voxels\Stone_04_Thumbnail.dds</VoxelHandPreview>
       <ColorMetalXZnY>Textures\Voxels\Iron_04_ForAxisXZ_cm.dds</ColorMetalXZnY>
       <NormalGlossXZnY>Textures\Voxels\Iron_04_ForAxisXZ_ng.dds</NormalGlossXZnY>
-
       <!--QUICK AND DIRTY COPY AND PASTE-->
-
       <Far3Distance>2000</Far3Distance>
       <Far3Color>
         <X>0.17</X>
@@ -561,16 +502,14 @@
         <Z>0.20</Z>
         <W>1.0</W>
       </Far3Color>
-      
       <ColorKey Hex="#DD9B28"/>
-	  <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect> 
-
+      <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect>
     </VoxelMaterial>
     <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
       <Id>
         <TypeId>VoxelMaterialDefinition</TypeId>
         <SubtypeId>Chlorargyrite_01</SubtypeId>
-      </Id>    
+      </Id>
       <MaterialTypeName>Rock</MaterialTypeName>
       <MinedOre>[PM] Chlorargyrite (Ag)</MinedOre>
       <MinedOreRatio>0.24</MinedOreRatio>
@@ -588,9 +527,7 @@
       <ColorMetalY>Textures\Voxels\MarsSoil_01_ForAxisXZ_cm.dds</ColorMetalY>
       <NormalGlossXZnY>Textures\Voxels\MarsRocks_01_ForAxisXZ_ng.dds</NormalGlossXZnY>
       <NormalGlossY>Textures\Voxels\MarsSoil_01_ForAxisXZ_ng.dds</NormalGlossY>
-
       <!--QUICK AND DIRTY COPY AND PASTE-->
-
       <Far3Distance>2000</Far3Distance>
       <Far3Color>
         <X>0.17</X>
@@ -598,16 +535,14 @@
         <Z>0.20</Z>
         <W>1.0</W>
       </Far3Color>
-      
       <ColorKey Hex="#DD9B28"/>
-	  <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect> 
-
+      <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect>
     </VoxelMaterial>
     <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
       <Id>
         <TypeId>VoxelMaterialDefinition</TypeId>
         <SubtypeId>Electrum_01</SubtypeId>
-      </Id>            
+      </Id>
       <MaterialTypeName>Rock</MaterialTypeName>
       <MinedOre>[PM] Electrum (Au,Ag)</MinedOre>
       <MinedOreRatio>0.18</MinedOreRatio>
@@ -623,9 +558,7 @@
       <VoxelHandPreview>Textures\Voxels\Gold_01_Thumbnail.dds</VoxelHandPreview>
       <ColorMetalXZnY>Textures\Voxels\Gold_01_ForAxisXZ_cm.dds</ColorMetalXZnY>
       <NormalGlossXZnY>Textures\Voxels\Gold_01_ForAxisXZ_ng.dds</NormalGlossXZnY>
-
       <!--QUICK AND DIRTY COPY AND PASTE-->
-
       <Far3Distance>2000</Far3Distance>
       <Far3Color>
         <X>0.17</X>
@@ -633,16 +566,14 @@
         <Z>0.20</Z>
         <W>1.0</W>
       </Far3Color>
-      
       <ColorKey Hex="#DD9B28"/>
-	  <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect> 
-
+      <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect>
     </VoxelMaterial>
     <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
       <Id>
         <TypeId>VoxelMaterialDefinition</TypeId>
         <SubtypeId>Sperrylite_01</SubtypeId>
-      </Id>            
+      </Id>
       <MaterialTypeName>Rock</MaterialTypeName>
       <MinedOre>[PM] Sperrylite (Pt)</MinedOre>
       <MinedOreRatio>0.21</MinedOreRatio>
@@ -658,9 +589,7 @@
       <VoxelHandPreview>Textures\Voxels\Platinum_01_Thumbnail.dds</VoxelHandPreview>
       <ColorMetalXZnY>Textures\Voxels\Platinum_01_ForAxisXZ_cm.dds</ColorMetalXZnY>
       <NormalGlossXZnY>Textures\Voxels\Platinum_01_ForAxisXZ_ng.dds</NormalGlossXZnY>
-
       <!--QUICK AND DIRTY COPY AND PASTE-->
-
       <Far3Distance>2000</Far3Distance>
       <Far3Color>
         <X>0.17</X>
@@ -668,16 +597,14 @@
         <Z>0.20</Z>
         <W>1.0</W>
       </Far3Color>
-      
       <ColorKey Hex="#DD9B28"/>
-	  <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect> 
-
+      <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect>
     </VoxelMaterial>
     <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
       <Id>
         <TypeId>VoxelMaterialDefinition</TypeId>
         <SubtypeId>Autunite_01</SubtypeId>
-      </Id>            
+      </Id>
       <MaterialTypeName>Rock</MaterialTypeName>
       <MinedOre>[EI] Autunite (U)</MinedOre>
       <MinedOreRatio>0.27</MinedOreRatio>
@@ -693,9 +620,7 @@
       <VoxelHandPreview>Textures\Voxels\EarthIce_Thumbnail.dds</VoxelHandPreview>
       <ColorMetalXZnY>Textures\Voxels\Helium3_01_ForAxisXZ_cm.dds</ColorMetalXZnY>
       <NormalGlossXZnY>Textures\Voxels\Helium3_01_ForAxisXZ_ng.dds</NormalGlossXZnY>
-
       <!--QUICK AND DIRTY COPY AND PASTE-->
-
       <Far3Distance>2000</Far3Distance>
       <Far3Color>
         <X>0.17</X>
@@ -703,16 +628,14 @@
         <Z>0.20</Z>
         <W>1.0</W>
       </Far3Color>
-      
       <ColorKey Hex="#DD9B28"/>
-	  <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect> 
-
+      <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect>
     </VoxelMaterial>
     <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
       <Id>
         <TypeId>VoxelMaterialDefinition</TypeId>
         <SubtypeId>Akimotoite_01</SubtypeId>
-      </Id>            
+      </Id>
       <MaterialTypeName>Rock</MaterialTypeName>
       <MinedOre>[S] Akimotoite (Si,Mg)</MinedOre>
       <MinedOreRatio>0.66</MinedOreRatio>
@@ -728,9 +651,7 @@
       <VoxelHandPreview>Textures\Voxels\Silicon_01_Thumbnail.dds</VoxelHandPreview>
       <ColorMetalXZnY>Textures\Voxels\Silicon_01_ForAxisXZ_cm.dds</ColorMetalXZnY>
       <NormalGlossXZnY>Textures\Voxels\Silicon_01_ForAxisXZ_ng.dds</NormalGlossXZnY>
-
       <!--QUICK AND DIRTY COPY AND PASTE-->
-
       <Far3Distance>2000</Far3Distance>
       <Far3Color>
         <X>0.17</X>
@@ -738,16 +659,14 @@
         <Z>0.20</Z>
         <W>1.0</W>
       </Far3Color>
-      
       <ColorKey Hex="#DD9B28"/>
-	  <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect> 
-
+      <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect>
     </VoxelMaterial>
     <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
       <Id>
         <TypeId>VoxelMaterialDefinition</TypeId>
         <SubtypeId>Wadsleyite_01</SubtypeId>
-      </Id>            
+      </Id>
       <MaterialTypeName>Rock</MaterialTypeName>
       <MinedOre>[S] Wadsleyite (Si,Mg)</MinedOre>
       <MinedOreRatio>0.57</MinedOreRatio>
@@ -763,9 +682,7 @@
       <VoxelHandPreview>Textures\Voxels\Woods_grass_Thumbnail.dds</VoxelHandPreview>
       <ColorMetalXZnY>Textures\Voxels\Woods_grass_cm.dds</ColorMetalXZnY>
       <NormalGlossXZnY>Textures\Voxels\Nickel_01_ForAxisXZ_ng.dds</NormalGlossXZnY>
-
       <!--QUICK AND DIRTY COPY AND PASTE-->
-
       <Far3Distance>2000</Far3Distance>
       <Far3Color>
         <X>0.17</X>
@@ -773,16 +690,14 @@
         <Z>0.20</Z>
         <W>1.0</W>
       </Far3Color>
-      
       <ColorKey Hex="#DD9B28"/>
-	  <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect> 
-
+      <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect>
     </VoxelMaterial>
     <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
       <Id>
         <TypeId>VoxelMaterialDefinition</TypeId>
         <SubtypeId>Taenite_01</SubtypeId>
-      </Id>            
+      </Id>
       <MaterialTypeName>Rock</MaterialTypeName>
       <MinedOre>[CM] Taenite (Fe,Ni)</MinedOre>
       <MinedOreRatio>0.5</MinedOreRatio>
@@ -798,9 +713,7 @@
       <VoxelHandPreview>Textures\Voxels\Iron_02_Thumbnail.dds</VoxelHandPreview>
       <ColorMetalXZnY>Textures\Voxels\Iron_02_ForAxisXZ_cm.dds</ColorMetalXZnY>
       <NormalGlossXZnY>Textures\Voxels\Iron_02_ForAxisXZ_ng.dds</NormalGlossXZnY>
-
       <!--QUICK AND DIRTY COPY AND PASTE-->
-
       <Far3Distance>2000</Far3Distance>
       <Far3Color>
         <X>0.17</X>
@@ -808,16 +721,14 @@
         <Z>0.20</Z>
         <W>1.0</W>
       </Far3Color>
-      
       <ColorKey Hex="#DD9B28"/>
-	  <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect> 
-
+      <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect>
     </VoxelMaterial>
     <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
       <Id>
         <TypeId>VoxelMaterialDefinition</TypeId>
         <SubtypeId>Cohenite_01</SubtypeId>
-      </Id>            
+      </Id>
       <MaterialTypeName>Rock</MaterialTypeName>
       <MinedOre>[CM] Cohenite (Ni,Co)</MinedOre>
       <MinedOreRatio>0.5</MinedOreRatio>
@@ -835,9 +746,7 @@
       <ColorMetalY>Textures\Voxels\Cobalt_01_ForAxisXZ_cm.dds</ColorMetalY>
       <NormalGlossXZnY>Textures\Voxels\Uraninite_01_ForAxisXZ_ng.dds</NormalGlossXZnY>
       <NormalGlossY>Textures\Voxels\Uraninite_01_ForAxisXZ_ng.dds</NormalGlossY>
-
       <!--QUICK AND DIRTY COPY AND PASTE-->
-
       <Far3Distance>2000</Far3Distance>
       <Far3Color>
         <X>0.17</X>
@@ -845,16 +754,14 @@
         <Z>0.20</Z>
         <W>1.0</W>
       </Far3Color>
-      
       <ColorKey Hex="#DD9B28"/>
-	  <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect> 
-
+      <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect>
     </VoxelMaterial>
     <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
       <Id>
         <TypeId>VoxelMaterialDefinition</TypeId>
         <SubtypeId>Kamacite_01</SubtypeId>
-      </Id>        
+      </Id>
       <MaterialTypeName>Rock</MaterialTypeName>
       <MinedOre>[CM] Kamacite (Fe,Ni,Co)</MinedOre>
       <MinedOreRatio>0.5</MinedOreRatio>
@@ -872,9 +779,7 @@
       <ColorMetalY>Textures\Voxels\Iron_01_ForAxisXZ_cm.dds</ColorMetalY>
       <NormalGlossXZnY>Textures\Voxels\Stone_02_ForAxisXZ_ng.dds</NormalGlossXZnY>
       <NormalGlossY>Textures\Voxels\Iron_01_ForAxisXZ_ng.dds</NormalGlossY>
-
       <!--QUICK AND DIRTY COPY AND PASTE-->
-
       <Far3Distance>2000</Far3Distance>
       <Far3Color>
         <X>0.17</X>
@@ -882,10 +787,8 @@
         <Z>0.20</Z>
         <W>1.0</W>
       </Far3Color>
-      
       <ColorKey Hex="#DD9B28"/>
-	  <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect> 
-
+      <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect>
     </VoxelMaterial>
     <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
       <Id>
@@ -901,21 +804,16 @@
       <IsRare>true</IsRare>
       <IsIndestructible>false</IsIndestructible>
       <ParticleEffect>Collision_Meteor</ParticleEffect>
-      
       <SpecularPower>21</SpecularPower>
       <SpecularShininess>0.632</SpecularShininess>
-
       <VoxelHandPreview>Textures\Voxels\AlienRockGrass_Thumbnail.dds</VoxelHandPreview>
       <ColorMetalXZnY>Textures\Voxels\AlienRockGrass_cm.dds</ColorMetalXZnY>
       <ColorMetalY>Textures\Voxels\AlienOrangeGrass_cm.dds</ColorMetalY>
-      <NormalGlossXZnY>Textures\Voxels\AlienRockGrass_ng.dds</NormalGlossXZnY>   
+      <NormalGlossXZnY>Textures\Voxels\AlienRockGrass_ng.dds</NormalGlossXZnY>
       <NormalGlossY>Textures\Voxels\AlienOrangeGrass_ng.dds</NormalGlossY>
-     
       <InitialScale>3.8</InitialScale>
-	  <ScaleMultiplier>6.5</ScaleMultiplier>
-    
+      <ScaleMultiplier>6.5</ScaleMultiplier>
       <!--QUICK AND DIRTY COPY AND PASTE-->
-
       <Far3Distance>2000</Far3Distance>
       <Far3Color>
         <X>0.17</X>
@@ -923,10 +821,8 @@
         <Z>0.20</Z>
         <W>1.0</W>
       </Far3Color>
-      
       <ColorKey Hex="#DD9B28"/>
-	  <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect> 
-
+      <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect>
     </VoxelMaterial>
     <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
       <Id>
@@ -942,18 +838,14 @@
       <IsRare>true</IsRare>
       <IsIndestructible>false</IsIndestructible>
       <ParticleEffect>Collision_Meteor</ParticleEffect>
-      
       <SpecularPower>9</SpecularPower>
       <SpecularShininess>1.435</SpecularShininess>
-
       <VoxelHandPreview>Textures\Voxels\MoonSoil_01_Thumbnail.dds</VoxelHandPreview>
-      <ColorMetalXZnY>Textures\Voxels\MoonSoil_01_ForAxisXZ_cm.dds</ColorMetalXZnY>  
+      <ColorMetalXZnY>Textures\Voxels\MoonSoil_01_ForAxisXZ_cm.dds</ColorMetalXZnY>
       <ColorMetalY>Textures\Voxels\RocksDesert_ForAxisXZ_cm.dds</ColorMetalY>
       <NormalGlossXZnY>Textures\Voxels\MoonSoil_01_ForAxisXZ_ng.dds</NormalGlossXZnY>
       <NormalGlossY>Textures\Voxels\RocksDesert_ForAxisXZ_ng.dds</NormalGlossY>
-      
       <!--QUICK AND DIRTY COPY AND PASTE-->
-
       <Far3Distance>2000</Far3Distance>
       <Far3Color>
         <X>0.17</X>
@@ -961,23 +853,18 @@
         <Z>0.20</Z>
         <W>1.0</W>
       </Far3Color>
-      
       <ColorKey Hex="#DD9B28"/>
-	  <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect> 
-
+      <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect>
     </VoxelMaterial>
-
     <!-- Deuterium voxel material is provided by Life'Tech-Powers (Multilingual).
          BDSS used to redefine it here to override AsteroidGeneratorSpawnProbabilityMultiplier
          to 1 (vs LTP's 5), but doing so without shipping LTP's textures produced
          MOD_ERROR entries in the load log. Now deferred to LTP entirely; if LTP
          isn't installed, BDSS's Deuterium ore deposits fall back to stone. -->
-
     <!-- Caixirite_Raw voxel material is provided by OPC mod 3719884258.
          Same deferral pattern as Deuterium: BDSS does not redefine it (would need
          the mod's textures). If OPC isn't installed, BDSS's Caixirite ore deposits
          (Alien primary, trace on Moon/Europa/Titan) fall back to stone. -->
-
     <!-- Vanilla generic asteroid ores. Disabled here so asteroid spawns are
          exclusively the BS named subtypes (Heazlewoodite, Cattierite, etc.).
          Textures still resolve from the game install for any non-asteroid uses. -->
@@ -997,7 +884,6 @@
       <NormalGlossXZnY>Textures\Voxels\Nickel_01_ForAxisXZ_ng.dds</NormalGlossXZnY>
       <ExtXZnY>Textures\Voxels\Nickel_01_ForAxisXZ_add.dds</ExtXZnY>
     </VoxelMaterial>
-
     <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
       <Id>
         <TypeId>VoxelMaterialDefinition</TypeId>
@@ -1014,7 +900,6 @@
       <NormalGlossXZnY>Textures\Voxels\Cobalt_01_ForAxisXZ_ng.dds</NormalGlossXZnY>
       <ExtXZnY>Textures\Voxels\Cobalt_01_ForAxisXZ_add.dds</ExtXZnY>
     </VoxelMaterial>
-
     <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
       <Id>
         <TypeId>VoxelMaterialDefinition</TypeId>
@@ -1031,7 +916,6 @@
       <NormalGlossXZnY>Textures\Voxels\Magnesium_01_ForAxisXZ_ng.dds</NormalGlossXZnY>
       <ExtXZnY>Textures\Voxels\Magnesium_01_ForAxisY_add.dds</ExtXZnY>
     </VoxelMaterial>
-
     <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
       <Id>
         <TypeId>VoxelMaterialDefinition</TypeId>
@@ -1048,7 +932,6 @@
       <NormalGlossXZnY>Textures\Voxels\Silicon_01_ForAxisXZ_ng.dds</NormalGlossXZnY>
       <ExtXZnY>Textures\Voxels\Silicon_01_ForAxisY_add.dds</ExtXZnY>
     </VoxelMaterial>
-
     <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
       <Id>
         <TypeId>VoxelMaterialDefinition</TypeId>
@@ -1065,7 +948,6 @@
       <NormalGlossXZnY>Textures\Voxels\Silver_01_ForAxisXZ_ng.dds</NormalGlossXZnY>
       <ExtXZnY>Textures\Voxels\Silver_01_ForAxisXZ_add.dds</ExtXZnY>
     </VoxelMaterial>
-
     <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
       <Id>
         <TypeId>VoxelMaterialDefinition</TypeId>
@@ -1082,7 +964,6 @@
       <NormalGlossXZnY>Textures\Voxels\Gold_01_ForAxisXZ_ng.dds</NormalGlossXZnY>
       <ExtXZnY>Textures\Voxels\Gold_01_ForAxisXZ_add.dds</ExtXZnY>
     </VoxelMaterial>
-
     <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
       <Id>
         <TypeId>VoxelMaterialDefinition</TypeId>
@@ -1099,7 +980,6 @@
       <NormalGlossXZnY>Textures\Voxels\Platinum_01_ForAxisXZ_ng.dds</NormalGlossXZnY>
       <ExtXZnY>Textures\Voxels\Platinum_01_ForAxisXZ_add.dds</ExtXZnY>
     </VoxelMaterial>
-
     <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
       <Id>
         <TypeId>VoxelMaterialDefinition</TypeId>
@@ -1116,6 +996,5 @@
       <NormalGlossXZnY>Textures\Voxels\Uraninite_01_ForAxisXZ_ng.dds</NormalGlossXZnY>
       <ExtXZnY>Textures\Voxels\Uraninite_01_ForAxisXZ_add.dds</ExtXZnY>
     </VoxelMaterial>
-
   </VoxelMaterials>
 </Definitions>

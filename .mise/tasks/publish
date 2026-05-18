@@ -6,16 +6,10 @@ IFS=$'\n\t'
 
 cd "$MISE_PROJECT_ROOT"
 
-# Steam Workshop descriptions cap at 8000 bytes. Strip "Development" section
-# (contributor-only, not for end users).
-sed '/^## Development$/,$d' readme.md \
-    | pandoc -f markdown -t ./vendor/2bbcode/bbcode_steam.lua >|description.bb
+pandoc -f markdown -t ./vendor/2bbcode/bbcode_steam.lua readme.md >|description.bb
 
-description_size=$(wc -c <description.bb)
-if [[ $description_size -gt 7999 ]]; then
-    echo "Description size too big: $description_size. Limit 8000."
-    exit 1
-fi
+# Workshop description hard cap.
+[[ $(wc -c <description.bb) -le 7999 ]] || { echo "description.bb >8000 bytes"; exit 1; }
 
 MOD_ID=2724252237
 
