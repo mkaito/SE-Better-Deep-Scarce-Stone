@@ -90,18 +90,22 @@ POG defaults: `maxOreTiles=100000`, `maxOrePatches=1000` per planet.
 All BDSS planets except Pertam hit the 100k cap. Pertam tops around 71k
 (more ores in palette, denser distribution doesn't crowd as tight).
 
-Cap distributes by p weight. Rare ores (Uraniaurite p=0.5 against ~172.5
-total weight on Alien) sometimes get 0 tiles via statistical edge cases.
-To force spawn: raise base `p` or bump `maxOrePatches`.
+Cap distributes by p weight. Per-variant slices below ~0.25 hit POG's
+noise floor and can roll 0 tiles. `genconfig` defines `TRACE = 1.5` as
+the minimum reliable per-ore p for "rare but present" entries; do not
+go below that without testing.
 
 ### Variant depths can exceed planet voxel space
 
 POG drops patches silently if vertical extent doesn't fit voxel volume.
-T4 V4/V5 variants likely exceed limits on most planets (Uraniaurite V5
-bottom = 2145m, DenseDeuterium V5 bottom = 2550m). Other variants of same
-ore spawn normally.
+T4 V5 variants exceed limits on most planets (Uraniaurite V5 bottom =
+2145m, DenseDeuterium V5 bottom = 2550m, Caixirite V5 bottom = 3300m).
+Other variants of same ore spawn normally. Alien caps at V4 for this
+reason; other planets keep V5 because the budget loss is smaller and
+the deep-pocket feel is intentional.
 
-For reliable T4 ore presence: lean on V3/V4, treat V5 as bonus.
+When extending: if a planet's palette has ores with baseline
+`startDepth + depth > 1300`, consider capping variants at V4.
 
 ### Interactive exit prompt
 

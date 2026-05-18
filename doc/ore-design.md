@@ -71,21 +71,21 @@ Variant spread is ±50% around baseline. See [pog.md](pog.md).
 1200m-range detector covers T1, T2, T3, and shallow T4. Deep T4 needs
 fancier detector mod or exploratory drilling.
 
-## Per-planet character
+## Per-planet character & role
 
 Each planet picks a variant subset (see [pog.md](pog.md)). Subset shifts
-deposit feel; ore palette unchanged.
+deposit feel; ore palette is the per-planet entry in `PLANET_ORES`.
 
-| Planet | Variants | Character |
-| --- | --- | --- |
-| EarthLike | V1, V2, V3 | Starter |
-| Pertam | V1, V2, V3, V4 | Mixed starter (no moon) |
-| Moon | V2, V3, V4 | Mid-game |
-| Europa | V2, V3, V4 | Mid-game (Ag-focused) |
-| Mars | V2, V3, V4, V5 | Mid-late (Pt) |
-| Titan | V2, V3, V4, V5 | Mid-late (Au) |
-| Alien | V3, V4, V5 | Endgame (U + 2H) |
-| Triton | V4, V5 | Expert (no Co source) |
+| Planet | Variants | Role | Character |
+| --- | --- | --- | --- |
+| EarthLike | V1, V2, V3 | Starter | T1+T2 abundant, bootstrap viable |
+| Pertam | V1, V2, V3, V4 | Starter (mixed, no moon) | T1+T2 + Au/Ag trace + endgame trace |
+| Moon | V2, V3, V4 | Transition (mid) | Si/Ni + Au/Ag, trace endgame |
+| Europa | V2, V3, V4 | Transition (mid) | Fe/Ni + Ag, trace endgame |
+| Titan | V2, V3, V4, V5 | Transition (mid-late) | Si + Au, trace endgame |
+| Mars | V2, V3, V4, V5 | Endgame (Pt) | Pt primary, T1 reduced |
+| Alien | V3, V4 | Endgame (U + 2H + Cxr) | All endgame ores at peer abundance; T1 trace only |
+| Triton | V4, V5 | Expert (Mg, no Co) | Mg primary, T1 reduced, deep |
 
 Within a planet's subset, per-ore `p` budget splits across variants using
 ratios `5:4:3:2:1` (truncated to N), shallowest gets largest slice.
@@ -98,7 +98,7 @@ Source of truth: `PLANET_ORES` dict in `.mise/tasks/genconfig`.
 
 T1 abundant: Kamacite (Fe+Ni+Co) p=50, Glaucodot (Fe+Co) p=50, Hapkeite
 (Fe+Si) p=50. Secondary p=5: Iron_02, Taenite, Sinoite, Cattierite,
-Cohenite. Trace Mg p=0.5: Akimotoite, Wadsleyite.
+Cohenite. Trace Mg via Akimotoite, Wadsleyite (TRACE).
 
 Co supplied by bridge ores. No precious metals, no uranium.
 
@@ -106,33 +106,38 @@ Co supplied by bridge ores. No precious metals, no uranium.
 
 T1 mix mirrors EarthLike, p rebalanced (15–40 vs 50). T2 Mg at p=5
 (higher than EarthLike — no moon to head to). Rare T3: Pyrite p=5, Galena
-p=5, Petzite + Electrum p=0.5.
+p=5, Petzite + Electrum TRACE. Trace endgame: Deuterium + Caixirite
+TRACE (small finds; Pertam plays as a no-moon starter, so endgame trace
+mirrors the moons).
 
 ### Moon
 
 Si: Quartz p=50. Ni: Heazlewoodite p=50. Ag: Galena p=5. Au: Pyrite p=5
-(Fe+Au), Porphyry p=5 (pure Au), trace Petzite/Electrum p=0.5. Fe via
-Pyrite only. Trace endgame: Deuterium p=0.5, Caixirite p=0.5 (small
+(Fe+Au), Porphyry p=5 (pure Au), trace Petzite/Electrum TRACE. Fe via
+Pyrite only. Trace endgame: Deuterium TRACE, Caixirite TRACE (small
 moon deposits; main source is Alien).
 
 ### Europa
 
 Fe: Hapkeite p=50. Ni: Taenite p=50. Si: Hapkeite. Ag: Galena p=50,
-Chlorargyrite p=5. Au: Porphyry p=5, trace Petzite/Electrum. Trace
-endgame: Deuterium p=0.5, Caixirite p=0.5.
+Chlorargyrite p=5. Au: Porphyry p=5, trace Petzite/Electrum TRACE. Trace
+endgame: Deuterium TRACE, Caixirite TRACE.
 
 ### Mars
 
-T1: Quartz p=50, Hapkeite p=50, Taenite p=50, Iron_02 p=5. Pt: Niggliite
-p=5, Cooperite p=5, Sperrylite p=5. Trace Akimotoite/Kamacite/Glaucodot
-p=0.5.
+T1 support tier: Quartz p=10, Hapkeite p=10, Taenite p=10, Iron_02 TRACE.
+Pt primary: Niggliite p=10, Cooperite p=10, Sperrylite p=10. Trace
+Akimotoite/Kamacite/Glaucodot TRACE.
 
 ### Alien
 
-T1: Heazlewoodite p=50, Hapkeite p=50, Taenite p=50, Iron_02 p=5. U:
-Carnotite p=5, Autunite p=5, Uraniaurite p=0.5. 2H: Deuterium p=5,
-DenseDeuterium p=0.5. Cxr: Caixirite p=5 (OPC). Trace
-Wadsleyite/Kamacite/Glaucodot p=0.5.
+T1 all TRACE. U primary: Carnotite/Autunite/Uraniaurite p=10. 2H:
+Deuterium/DenseDeuterium p=10. Cxr: Caixirite p=10 (OPC). Trace
+Wadsleyite/Kamacite/Glaucodot TRACE.
+
+Sole source for Uraniaurite, DenseDeuterium, Caixirite — sole-source
+principle pushes them to peer with the basic U/2H sources. All endgame
+ores at p=10 (double the mid-tier peer p=5) so the trip pays off.
 
 Carnotite yields more Ice than Uranium per tile. Caixirite ratio is
 0.01, so per-deposit yield is trace despite oversized deposit footprint.
@@ -140,14 +145,14 @@ Carnotite yields more Ice than Uranium per tile. Caixirite ratio is
 ### Titan
 
 Pyrite p=50, Quartz p=50, Taenite p=50, Hapkeite p=5. Au: Porphyry p=5,
-Electrum p=5, Petzite p=5. Trace endgame: Deuterium p=0.5, Caixirite
-p=0.5.
+Electrum p=5, Petzite p=5. Trace endgame: Deuterium TRACE, Caixirite
+TRACE.
 
 ### Triton
 
-Iron_02 p=50, Wadsleyite p=50 (Si+Mg), Heazlewoodite p=50. Mg sources
-p=5: Dolomite (pure Mg), Olivine, Akimotoite. Trace Kamacite/Glaucodot
-p=0.5. No primary Co source.
+Iron_02 p=10, Heazlewoodite p=10 (T1 support tier). Wadsleyite p=50
+(Si+Mg, Mg primary). Dolomite p=15 (pure Mg), Olivine p=15, Akimotoite
+p=15. Trace Kamacite/Glaucodot TRACE. No primary Co source.
 
 ## Magnesium availability
 
@@ -156,11 +161,12 @@ Triton.
 
 | Planet | Deep Mg | Boulder Mg |
 | --- | --- | --- |
-| EarthLike | Trace (p=0.5 Akimotoite, Wadsleyite) | Yes (uniform 10%) |
+| EarthLike | Trace (TRACE Akimotoite, Wadsleyite) | Yes (uniform 10%) |
 | Pertam | p=5 Akimotoite, Wadsleyite | No boulders |
-| Triton | p=50 Wadsleyite + p=5 Dolomite/Olivine/Akimotoite | No boulders |
-| Alien | Trace (p=0.5 Wadsleyite) | Yes (10%) |
-| Mars, Moon, Europa, Titan | None | Yes (10%) |
+| Triton | p=50 Wadsleyite + p=15 Dolomite/Olivine/Akimotoite | No boulders |
+| Alien | Trace (TRACE Wadsleyite) | Yes (10%) |
+| Mars | Trace (TRACE Akimotoite) | Yes (10%) |
+| Moon, Europa, Titan | None | Yes (10%) |
 
 Mg yield per tile is 0.003–0.008 across all sources (BS spreadsheet).
 Triton stacking required for usable amounts.

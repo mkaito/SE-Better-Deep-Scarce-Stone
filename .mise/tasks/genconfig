@@ -77,55 +77,60 @@ PLANETS = {
     "Moon":      dict(seed=2, surfaceHintColour=176, variants=[2, 3, 4]),
     "Mars":      dict(seed=3,                        variants=[2, 3, 4, 5]),
     "Europa":    dict(seed=4,                        variants=[2, 3, 4]),
-    "Alien":     dict(seed=5, surfaceHintColour=160, variants=[3, 4, 5]),
+    # Alien capped at V4 — V5 of deep T4 ores clips voxel volume. See doc/pog.md.
+    "Alien":     dict(seed=5, surfaceHintColour=160, variants=[3, 4]),
     "Titan":     dict(seed=6,                        variants=[2, 3, 4, 5]),
     "Triton":    dict(seed=8, surfaceHintColour=144, variants=[4, 5]),
     "Pertam":    dict(seed=6, surfaceHintColour=144, variants=[1, 2, 3, 4]),
 }
 
-# Per-planet ore presence + spawn-weight budget. Key = base ore name; value = p budget
-# to split across that planet's chosen variants. These mirror the existing per-planet
-# `p` values in the current pog-config.json.template; edit to tune ore presence.
+# Min reliable per-ore p; lower budgets split into per-variant slices that POG can roll to 0.
+TRACE = 1.5
+
+# Per-planet ore presence + spawn-weight budget. See doc/ore-design.md for per-planet role.
 PLANET_ORES = {
     "EarthLike": {
         "kamacite": 50, "glaucodot": 50, "hapkeite": 50,
         "sinoite": 5, "taenite": 5, "iron": 5,
         "cattierite": 5, "cohenite": 5,
-        "akimotoite": 0.5, "wadsleyite": 0.5,
+        "akimotoite": TRACE, "wadsleyite": TRACE,
     },
     "Moon": {
         "quartz": 50, "heazlewoodite": 50,
         "galena": 5, "pyrite": 5, "porphyry": 5,
-        "petzite": 0.5, "electrum": 0.5,
-        "deuterium": 0.5, "caixirite": 0.5,
+        "petzite": TRACE, "electrum": TRACE,
+        "deuterium": TRACE, "caixirite": TRACE,
     },
     "Mars": {
-        "quartz": 50, "hapkeite": 50, "taenite": 50,
-        "iron": 5, "niggliite": 5, "cooperite": 5, "sperrylite": 5,
-        "akimotoite": 0.5, "kamacite": 0.5, "glaucodot": 0.5,
+        "quartz": 10, "hapkeite": 10, "taenite": 10,
+        "iron": TRACE,
+        "niggliite": 10, "cooperite": 10, "sperrylite": 10,
+        "akimotoite": TRACE, "kamacite": TRACE, "glaucodot": TRACE,
     },
     "Europa": {
         "hapkeite": 50, "taenite": 50, "galena": 50,
         "chlorargyrite": 5, "porphyry": 5,
-        "petzite": 0.5, "electrum": 0.5,
-        "deuterium": 0.5, "caixirite": 0.5,
+        "petzite": TRACE, "electrum": TRACE,
+        "deuterium": TRACE, "caixirite": TRACE,
     },
     "Alien": {
-        "heazlewoodite": 50, "hapkeite": 50, "taenite": 50,
-        "iron": 5, "carnotite": 5, "autunite": 5,
-        "uraniaurite": 0.5, "wadsleyite": 0.5, "kamacite": 0.5, "glaucodot": 0.5,
-        "deuterium": 5, "denseDeuterium": 0.5,
-        "caixirite": 5,
+        "heazlewoodite": TRACE, "hapkeite": TRACE, "taenite": TRACE,
+        "iron": TRACE,
+        "carnotite": 10, "autunite": 10, "uraniaurite": 10,
+        "deuterium": 10, "denseDeuterium": 10,
+        "caixirite": 10,
+        "wadsleyite": TRACE, "kamacite": TRACE, "glaucodot": TRACE,
     },
     "Titan": {
         "pyrite": 50, "quartz": 50, "taenite": 50,
         "hapkeite": 5, "electrum": 5, "porphyry": 5, "petzite": 5,
-        "deuterium": 0.5, "caixirite": 0.5,
+        "deuterium": TRACE, "caixirite": TRACE,
     },
     "Triton": {
-        "iron": 50, "wadsleyite": 50, "heazlewoodite": 50,
-        "dolomite": 5, "olivine": 5, "akimotoite": 5,
-        "kamacite": 0.5, "glaucodot": 0.5,
+        "iron": 10, "heazlewoodite": 10,
+        "wadsleyite": 50,
+        "dolomite": 15, "olivine": 15, "akimotoite": 15,
+        "kamacite": TRACE, "glaucodot": TRACE,
     },
     "Pertam": {
         "kamacite": 30, "glaucodot": 30, "hapkeite": 30,
@@ -134,7 +139,8 @@ PLANET_ORES = {
         "akimotoite": 5, "wadsleyite": 5,
         "quartz": 40, "heazlewoodite": 35,
         "galena": 5, "pyrite": 5,
-        "petzite": 0.5, "electrum": 0.5,
+        "petzite": TRACE, "electrum": TRACE,
+        "deuterium": TRACE, "caixirite": TRACE,
     },
 }
 
